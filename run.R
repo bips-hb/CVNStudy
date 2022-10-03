@@ -46,7 +46,7 @@ if (test_run) {
   sim_param <- dplyr::as_tibble(
     expand.grid(
       p = c(10),  
-      n_obs = c(50, 100), 
+      n_obs = c(50), 
       n_edges_added_x = c(2), 
       n_edges_removed_x = c(2), 
       n_edges_added_y = c(2), 

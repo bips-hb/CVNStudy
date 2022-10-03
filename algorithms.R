@@ -5,8 +5,12 @@ cvn_wrapper <- function(data, job, instance, ...) {
   algo_param <- job$algo.pars 
   
   W <- create_weight_matrix(type = algo_param$type_weight_matrix)
-  fit <- CVN::CVN(instance$data, W, maxiter = 1000)
+  print(W)
   
+  fit <- CVN::CVN(instance$data, W, lambda1 = 1:2, 
+                  lambda2 = 1:2, eps = 10e-4, maxiter = 1000, verbose = TRUE)
+  
+  print(fit)
   return(fit)
 }
 
