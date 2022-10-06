@@ -42,7 +42,7 @@ addAlgorithm(name = "cvn", fun = cvn_wrapper)
 
 ### add the experiments
 
-if (test_run) { 
+if (test_run) { # simplify the parameters for a test run
   sim_param <- dplyr::as_tibble(
     expand.grid(
       p = c(10),  
@@ -69,14 +69,17 @@ prob_design <- list(sim_data = sim_param)
 
 # parameters for the methods
 algo_design <- list(
-  cvn = data.frame(type_weight_matrix = c("full", "glasso", "grid"))
+  cvn = data.frame(expand.grid(
+                      type_weight_matrix = c("full", "glasso", "grid"), 
+                      lambda_choice = c("grid")
+                   ))
 )
 
 addExperiments(prob_design, algo_design, repls = repls)
 
 ### submit 
 ids <- findNotStarted()
-
+submitJobs(ids = c(1))
 if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
   ids <- findNotStarted()
   ids[, chunk := chunk(job.id, chunk.size = 50)]
@@ -90,8 +93,9 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
 
 waitForJobs()
 
+r = loadResult(id = 1)
 ### collect results 
-res <- reduceResultsDataTable(fun = unwrap) 
+res <- reduceResultsList() 
 
 ### combine the results with the parameters for the job
 pars = unwrap(getJobPars())
