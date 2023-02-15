@@ -98,17 +98,14 @@ res <- reduceResultsList()
 # combine into one big data frame
 res <- do.call(rbind.data.frame, res)
 
-
-
 ### combine the results with the parameters for the job
 pars = unwrap(getJobPars())
 
 # repeat the parameters 
 n_repeat <- nrow(res) / nrow(pars)
-
 pars <- pars %>% slice(rep(1:n(), each = n_repeat)) 
 
-tab = cbind(pars, res)
+tab <- cbind(pars, res)
 
 readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 

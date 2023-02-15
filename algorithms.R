@@ -77,9 +77,10 @@ cvn_wrapper <- function(data, job, instance, ...) {
   filename <- paste("results/", paste(c("cvnsim", job$prob.pars, job$algo.pars, job$seed, job$repl), collapse = '_'), sep = '')
   
   # store the fit and the truth in a file 
-  saveRDS(fit, filename)
+  readr::write_rds(fit, filename, compress = "gz")
   
   performance <- determine_performance(fit)
+  performance$repl <- job$repl
   return(performance)
 }
 
