@@ -4,6 +4,7 @@ cvn_wrapper <- function(data, job, instance, ...) {
   print(job$prob.pars)
   print(job$algo.pars)
   print(job$seed)
+  print(job)
   
   W <- create_weight_matrix(type = job$algo.pars$type_weight_matrix)
   
@@ -19,7 +20,7 @@ cvn_wrapper <- function(data, job, instance, ...) {
   fit$truth <- instance$truth
   
   # save results 
-  filename <- paste("results/", paste(c("cvnsim", job$prob.pars, job$algo.pars, job$seed), collapse = '_'), sep = '')
+  filename <- paste("results/", paste(c("cvnsim", job$prob.pars, job$algo.pars, job$seed, job$repl), collapse = '_'), sep = '')
   
   saveRDS(fit, filename)
   

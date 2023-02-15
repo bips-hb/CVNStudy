@@ -15,7 +15,7 @@ source = c("problems.R", "algorithms.R", "parameter-settings.R",
 
 ### number of replications for each parameter setting
 if (test_run) { 
-  repls <- 1 
+  repls <- 2 
 } else { 
   repls <- 100
 }
@@ -79,7 +79,7 @@ addExperiments(prob_design, algo_design, repls = repls)
 
 ### submit 
 ids <- findNotStarted()
-submitJobs(ids = c(1))
+submitJobs(ids = 1:4)
 if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
   ids <- findNotStarted()
   ids[, chunk := chunk(job.id, chunk.size = 50)]
@@ -93,7 +93,7 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
 
 waitForJobs()
 
-r = loadResult(id = 1)
+r = loadResult(id = 1:3)
 ### collect results 
 res <- reduceResultsList() 
 
