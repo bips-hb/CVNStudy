@@ -1,7 +1,8 @@
 library(batchtools)
 library(CVN) 
 library(CVNSim)
-library(dplyr)
+library(tidyverse)
+library(hmeasure)
 
 options(batchtools.verbose = TRUE)
 options(stringsAsFactors = FALSE)
@@ -9,7 +10,7 @@ options(stringsAsFactors = FALSE)
 test_run <- TRUE # if true only one replication is run  
 
 ### packages and files to load
-packages = c("CVN", "CVNSim", "dplyr")
+packages = c("CVN", "CVNSim", "tidyverse", "hmeasure", "batchtools")
 source = c("problems.R", "algorithms.R", "parameter-settings.R", 
            "create-weight-matrices.R")
 
@@ -47,10 +48,8 @@ if (test_run) { # simplify the parameters for a test run
     expand.grid(
       p = c(10),  
       n_obs = c(50), 
-      n_edges_added_x = c(2), 
-      n_edges_removed_x = c(2), 
-      n_edges_added_y = c(2), 
-      n_edges_removed_y = c(2)
+      n_edges_x = c(2), 
+      n_edges_y = c(2)
     )
   )
   
@@ -70,8 +69,7 @@ prob_design <- list(sim_data = sim_param)
 # parameters for the methods
 algo_design <- list(
   cvn = data.frame(expand.grid(
-                      type_weight_matrix = c("full", "glasso", "grid"), 
-                      lambda_choice = c("grid")
+                      type_weight_matrix = c("full", "glasso", "grid")
                    ))
 )
 
@@ -79,7 +77,7 @@ addExperiments(prob_design, algo_design, repls = repls)
 
 ### submit 
 ids <- findNotStarted()
-submitJobs(ids = 1:4)
+#submitJobs(ids = 1:4)
 if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
   ids <- findNotStarted()
   ids[, chunk := chunk(job.id, chunk.size = 50)]
@@ -93,18 +91,29 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
 
 waitForJobs()
 
-r = loadResult(id = 1:3)
+r = loadResult(1)#loadResult(id = 1:3)
 ### collect results 
 res <- reduceResultsList() 
 
+# combine into one big data frame
+res <- do.call(rbind.data.frame, res)
+
+
+
 ### combine the results with the parameters for the job
 pars = unwrap(getJobPars())
-tab = ijoin(pars, res)
+
+# repeat the parameters 
+n_repeat <- nrow(res) / nrow(pars)
+
+pars <- pars %>% slice(rep(1:n(), each = n_repeat)) 
+
+tab = cbind(pars, res)
 
 readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 
 # post-process the results
-source("exec/get-best-f1-scores.R")
+#source("exec/get-best-f1-scores.R")
 
 # create the plots
-source("create-plots.R")
+#source("create-plots.R")
