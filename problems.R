@@ -1,7 +1,7 @@
 # Wrapper for the CVNSim simulator 
 simulator_wrapper <-
   function(job, data, type, power, probability, p, n_obs, 
-           n_edges_x, n_edges_y) {
+           n_edges_x, n_edges_y, sim_param_id) {
     
   # generate a starting graph
   starting_graph <- CVNSim::generate_graph(p = p, type = "random", 

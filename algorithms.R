@@ -1,11 +1,21 @@
+# turn a list of adjencency matrices in a vector of binary labels
+get_all_labels <- function(adj_matrices) { 
+  # go over all graphs
+  sapply(1:length(adj_matrices), function(i) { 
+    adj_matrices[[i]][upper.tri(adj_matrices[[i]], diag = FALSE)]
+  })  
+}
+
+# get all the adjacency matrices of fit$truth
+get_adj_matrices_truth <- function(truth) { 
+  m <- length(truth)  
+  lapply(1:m, function(i) { 
+    truth[[i]]$adj_matrix 
+  })
+}
+
 # determine TP, FN, FP and TN for each lambda1 and lambda2 value
-# used for determining the performance for a single estimated 
-# adjacency matrix
-classification <- function(est_adj_matrix, true_adj_matrix) { 
-  
-  # get the estimated and true labels   
-  est_labels <- est_adj_matrix[upper.tri(est_adj_matrix, diag = FALSE)]
-  true_labels <- true_adj_matrix[upper.tri(true_adj_matrix, diag = FALSE)]
+get_classification_scores <- function(est_labels, true_labels) { 
   
   # use the hmeasure package for getting the classification measures
   cl <- hmeasure::misclassCounts(true_labels, est_labels)
@@ -25,32 +35,23 @@ classification <- function(est_adj_matrix, true_adj_matrix) {
   return(results)
 }
 
-
-# determines the performance (true positive, true negatives etc.) 
-# given the fit created by the cvn_wrapper function (see below)
-# and the truth. Note that the fit and truth are stored in a file
-# in the folder 'results/'
-determine_performance <- function(fit) { 
+get_performance <- function(fit) { 
   
-  # get the general results and repeat them m times, one for each graph
-  performance <- fit$results %>% slice(rep(1:n(), each = fit$m)) 
-  performance$graph_id <- rep((1:fit$m), fit$n_lambda_values)
+  # get the true labels
+  true_labels <- get_all_labels(get_adj_matrices_truth(fit$truth))
   
-  # get the classification performance using the function classification
-  results <- lapply(1:nrow(performance), function(i) { 
-    id <- performance$id[i]
-    graph_id <- performance$graph_id[i]
-    classification(fit$adj_matrices[[id]][[graph_id]], 
-                   fit$truth[[graph_id]]$adj_matrix)
+  # get the estimated labels for each tuning parameter setting and 
+  # return the performance
+  l <- lapply(1:fit$n_lambda_values, function(i) { 
+    est_labels <- get_all_labels(fit$adj_matrices[[i]])
+    get_classification_scores(est_labels, true_labels)
   })
   
-  # combine the results into a data frame
-  results <- do.call(rbind.data.frame, results)
-  
-  # combine both data frames into one
-  cbind(performance, results)
+  l <- do.call(rbind.data.frame, l)
+  cbind(fit$results, l)
 }
 
+get_performance(fit)
 
 
 
@@ -84,8 +85,9 @@ cvn_wrapper <- function(data, job, instance, ...) {
   # store the fit and the truth in a file 
   readr::write_rds(fit, filename, compress = "gz")
   
-  performance <- determine_performance(fit)
+  performance <- get_performance(fit)
   performance$repl <- job$repl
+  performance$job.id <- job$job.id
   return(performance)
 }
 

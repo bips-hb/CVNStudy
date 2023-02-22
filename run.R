@@ -43,26 +43,6 @@ addAlgorithm(name = "cvn", fun = cvn_wrapper)
 
 ### add the experiments
 
-if (test_run) { # simplify the parameters for a test run
-  sim_param <- dplyr::as_tibble(
-    expand.grid(
-      p = c(10),  
-      n_obs = c(50), 
-      n_edges_x = c(2), 
-      n_edges_y = c(2)
-    )
-  )
-  
-  sim_scalefree <- dplyr::as_tibble(
-    expand.grid(
-      type = "scale-free", 
-      power = c(2)
-    ))
-  
-  types <- sim_random
-  sim_param <- merge(types, sim_param) 
-}
-
 # parameters for the simulation
 prob_design <- list(sim_data = sim_param)
 
@@ -99,13 +79,9 @@ res <- reduceResultsList()
 res <- do.call(rbind.data.frame, res)
 
 ### combine the results with the parameters for the job
-pars = unwrap(getJobPars())
+pars <- unwrap(getJobPars())
 
-# repeat the parameters 
-n_repeat <- nrow(res) / nrow(pars)
-pars <- pars %>% slice(rep(1:n(), each = n_repeat)) 
-
-tab <- cbind(pars, res)
+tab <- dplyr::left_join(res, pars)
 
 readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 
