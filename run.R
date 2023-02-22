@@ -18,7 +18,7 @@ source = c("problems.R", "algorithms.R", "parameter-settings.R",
 if (test_run) { 
   repls <- 2 
 } else { 
-  repls <- 100
+  repls <- 20
 }
 
 ### Setting up the repository 

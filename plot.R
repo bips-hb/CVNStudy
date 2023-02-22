@@ -31,7 +31,7 @@ create_boxplot <- function(data, row_settings, var = c("F1", "F2"),
     if (row_settings$type == "scale-free") { 
       graph_desc <- sprintf("(Scale-free, power coeff. %g)", row_settings$power)
     } else { 
-      graph_desc <- sprintf("(Erdős–Rényi, prob. %g)", row_settings$probability)
+      graph_desc <- sprintf("(Erdos-Rényi, prob. %g)", row_settings$probability)
     }
     title <- sprintf("p = %d, n = %d, weight matrix: %s %s", 
                      row_settings$p, 
@@ -55,5 +55,30 @@ create_boxplot <- function(data, row_settings, var = c("F1", "F2"),
     theme_classic()
 }
 
+for (i in 1:nrow(settings)) { 
+  row_settings <- settings[i, ]
+  
+  p <- create_boxplot(data, row_settings, var = "F1")  
+
+  filename <- paste0(lapply(as.list(row_settings), function(x) as.character(x)), collapse = "_")
+  
+  filename <- paste0("figures/", filename, collapse = "")
+  
+  filename <- paste0(filename, ".pdf", collapse = "")
+  
+  ggplot2::ggsave(
+    filename,
+    p,
+    device = NULL,
+    path = NULL,
+    scale = 1,
+    width = 7,
+    height = 4,
+    units = c("in", "cm", "mm", "px"),
+    dpi = 300,
+    limitsize = TRUE,
+    bg = NULL
+  )
+}
 create_boxplot(data, settings[3,])
 
