@@ -91,7 +91,7 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
 
 waitForJobs()
 
-r = loadResult(1)#loadResult(id = 1:3)
+#r = loadResult(1)#loadResult(id = 1:3)
 ### collect results 
 res <- reduceResultsList() 
 

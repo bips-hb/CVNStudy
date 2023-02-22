@@ -24,3 +24,7 @@ sim_random <- dplyr::as_tibble(
 types <- dplyr::full_join(sim_scalefree, sim_random)
 
 sim_param <- merge(types, sim_param)
+
+#' provide a specific id to each parameter setting. This makes it 
+#' easier to process the results later on when there are repetitions
+sim_param$sim_param_id <- 1:nrow(sim_param)

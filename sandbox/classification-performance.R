@@ -19,8 +19,10 @@ classification <- function(est_adj_matrix, true_adj_matrix) {
   results$FP <- cl$conf.matrix$pred.1[2]
   results$FN <- cl$conf.matrix$pred.0[1]
   results$TN <- cl$conf.matrix$pred.0[2]
+  results$F1 <- (2*results$TP) / (2*results$TP + results$FP + results$FN)
+  results$F2 <- 5*(results$Precision * results$Recall) / (4*results$Precision + results$Recall)
   results$Hamming <- results$FP + results$FN
-  
+ 
   return(results)
 }
 
