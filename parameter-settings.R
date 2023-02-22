@@ -1,3 +1,10 @@
+
+# parameter settings for the method 
+
+algo_param <- data.frame(expand.grid(
+  type_weight_matrix = c("full", "glasso", "grid")
+))
+
 if (test_run) { # simplify the parameters for a test run
   sim_param <- dplyr::as_tibble(
     expand.grid(
@@ -17,7 +24,7 @@ if (test_run) { # simplify the parameters for a test run
   sim_random <- dplyr::as_tibble(
     expand.grid(
       type = "random", 
-      probability = c(.025)
+      probability = c(.5)
     ))
   
   types <- dplyr::full_join(sim_scalefree, sim_random)

@@ -28,3 +28,11 @@ get_best_score_per_experiment <- function(data, var = c("aic", "bic", "F1"), max
 aic <- get_best_score_per_experiment(data, "aic", maximum = FALSE)
 bic <- get_best_score_per_experiment(data, "bic", maximum = FALSE)
 oracle <- get_best_score_per_experiment(data, "F1", maximum = TRUE)
+
+aic$score <- "AIC"
+bic$score <- "BIC"
+oracle$score <- "Oracle"
+
+best_scores <- do.call("rbind", list(aic, bic, oracle))
+
+readr::write_rds(best_scores, "results/best-scores.rds", compress = "gz")

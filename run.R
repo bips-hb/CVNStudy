@@ -48,9 +48,7 @@ prob_design <- list(sim_data = sim_param)
 
 # parameters for the methods
 algo_design <- list(
-  cvn = data.frame(expand.grid(
-                      type_weight_matrix = c("full", "glasso", "grid")
-                   ))
+  cvn = algo_param
 )
 
 addExperiments(prob_design, algo_design, repls = repls)
@@ -86,7 +84,7 @@ tab <- dplyr::left_join(res, pars)
 readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 
 # post-process the results
-#source("exec/get-best-f1-scores.R")
+source("process-results.R")
 
 # create the plots
-#source("create-plots.R")
+#source("plots.R")
