@@ -4,7 +4,7 @@ simulator_wrapper <-
            n_edges_x, n_edges_y, sim_param_id) {
     
   # generate a starting graph
-  starting_graph <- CVNSim::generate_graph(p = p, type = "random", 
+  starting_graph <- CVNSim::generate_graph(p = p, type = type, 
                                              power = power, probability = probability)
     
     
