@@ -1,4 +1,14 @@
-# turn a list of adjencency matrices in a vector of binary labels
+#' Algorithms used in the study 
+
+
+# Functions for determining the performance ------------------------------------
+
+
+#' Turn a binary adjacency matrix is a single binary vector
+#' 
+#' @param adj_matrices A list of adjacency matrices
+#' 
+#' @return A single vector of all upper-triangular parts (due to symmetry) 
 get_all_labels <- function(adj_matrices) { 
   # go over all graphs
   sapply(1:length(adj_matrices), function(i) { 
@@ -6,7 +16,11 @@ get_all_labels <- function(adj_matrices) {
   })  
 }
 
-# get all the adjacency matrices of fit$truth
+#' Get all the adjacency matrices of \code{fit$truth}
+#' 
+#' @param truth The true graphs
+#' 
+#' @return A list with all adjacency matrices
 get_adj_matrices_truth <- function(truth) { 
   m <- length(truth)  
   lapply(1:m, function(i) { 
@@ -14,7 +28,12 @@ get_adj_matrices_truth <- function(truth) {
   })
 }
 
-# determine TP, FN, FP and TN for each lambda1 and lambda2 value
+#' Performance Measures
+#' 
+#' Determine TP, FN, FP and TN etc. for each lambda1 and lambda2 value
+#' 
+#' @param est_labels The estimated labels (binary) of the fitted model 
+#' @param true_labels The labels (binary) of the true graphs
 get_classification_scores <- function(est_labels, true_labels) { 
   
   # use the hmeasure package for getting the classification measures
@@ -35,6 +54,13 @@ get_classification_scores <- function(est_labels, true_labels) {
   return(results)
 }
 
+#' Performance 
+#' 
+#' Determines the performance of a fitted model 
+#' 
+#' @param fit The fitted model
+#' 
+#' @return A dataframe with the performance for each lambda1 and lambda2 pair
 get_performance <- function(fit) { 
   
   # get the true labels
@@ -51,10 +77,11 @@ get_performance <- function(fit) {
   cbind(fit$results, l)
 }
 
-get_performance(fit)
 
 
 
+
+#' CVN wrapper -----------------------------------------------------------------
 
 cvn_wrapper <- function(data, job, instance, ...) { 
   
@@ -64,7 +91,7 @@ cvn_wrapper <- function(data, job, instance, ...) {
   print(job$seed)
   print(job)
   
-  W <- create_weight_matrix(type = job$algo.pars$type_weight_matrix)
+  W <- CVN::create_weight_matrix(type = job$algo.pars$type_weight_matrix)
   
   # TODO: Change with type of weight matrix
   #if (job$algo.pars$type_weight_matrix == "grid") { 
@@ -72,10 +99,10 @@ cvn_wrapper <- function(data, job, instance, ...) {
   lambda2 = 1:2
   #}
   
+  # Apply the CVN algorithm 
   fit <- CVN::CVN(instance$data, W, lambda1 = lambda1, 
                   lambda2 = lambda2, eps = 10e-4, maxiter = 1000, verbose = TRUE)
   
-  #print(fit)
   # add the truth 
   fit$truth <- instance$truth
   

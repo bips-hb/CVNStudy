@@ -7,27 +7,44 @@ library(hmeasure)
 options(batchtools.verbose = TRUE)
 options(stringsAsFactors = FALSE)
 
-test_run <- TRUE # if true only one replication is run  
+# GLOBAL PARAMETERS ------------------------------------------------------------
 
-### packages and files to load
-packages = c("CVN", "CVNSim", "tidyverse", "hmeasure", "batchtools")
-source = c("problems.R", "algorithms.R", "parameter-settings.R", 
-           "create-weight-matrices.R")
+# Debugging --------------------------
 
-### number of replications for each parameter setting
+#' For debugging. Only a limited number of parameter settings is used, see 
+#' parameter-settings.R. Only 
+test_run <- TRUE  
+
+# Total number of replications for each parameter setting
 if (test_run) { 
-  repls <- 2 
+  repls <- 1 
 } else { 
   repls <- 20
 }
 
-### Setting up the repository 
-start_from_scratch <- TRUE # if true, removes all repository and creates a new one
+# Setting up the repository ---------
 
-reg_name <- "cvnsim"
+#' WARNING: If TRUE, removes the current repository and creates a new one. Used 
+#' for debugging as well 
+start_from_scratch <- TRUE 
+
+#' Name of the repository
+reg_name <- "cvnstudy"
+
+#' Packages and files to load
+packages = c("CVN", "CVNSim", "tidyverse", "hmeasure", "batchtools")
+source = c("problems.R", "algorithms.R", "parameter-settings.R", 
+           "create-weight-matrices.R")
+
+#' Number of concurrent jobs that run on the cluster (if the cluster is used)
+max.concurrent.jobs <- 200
+
+
+#' THE EXPERIMENT ITSELF -------------------------------------------------------
+
 reg_dir <- sprintf("%s/registries/%s", getwd(), reg_name)
 
-if (start_from_scratch) { 
+if (start_from_scratch) { # remove any previously existing registry and start a new one
   dir.create("registries", showWarnings = FALSE)
   unlink(reg_dir, recursive = TRUE)
   reg <- makeExperimentRegistry(file.dir = reg_dir, packages = packages, source = source)      
@@ -62,29 +79,30 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
   submitJobs(ids = ids, # walltime in seconds, 10 days max, memory in MB
              resources = list(name = reg_name, chunks.as.arrayjobs = TRUE,
                               memory = 80000, walltime = 10*24*3600,
-                              max.concurrent.jobs = 200))
+                              max.concurrent.jobs = max.concurrent.jobs))
 } else {
   submitJobs(ids = ids)
 }
 
 waitForJobs()
 
-#r = loadResult(1)#loadResult(id = 1:3)
-### collect results 
+
+#' COLLECT THE RESULTS --------------------------------------------------------- 
 res <- reduceResultsList() 
 
 # combine into one big data frame
 res <- do.call(rbind.data.frame, res)
 
-### combine the results with the parameters for the job
+# combine the results with the parameters for the job
 pars <- unwrap(getJobPars())
 
 tab <- dplyr::left_join(res, pars)
 
+# store these results
 readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 
 # post-process the results
 source("process-results.R")
 
-# create the plots
-#source("plots.R")
+# TODO create the plots
+#source("plots.R") 
