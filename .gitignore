@@ -1,8 +1,3 @@
-results*
-sandbox.R
-data*
-data/*
-figures*
 .Rproj.user
 .Rhistory
 .RData
