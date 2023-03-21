@@ -27,12 +27,14 @@ get_best_score_per_experiment <- function(data, var = c("aic", "bic", "F1"), max
 
 aic <- get_best_score_per_experiment(data, "aic", maximum = FALSE)
 bic <- get_best_score_per_experiment(data, "bic", maximum = FALSE)
-oracle <- get_best_score_per_experiment(data, "F1", maximum = TRUE)
+oracleF1 <- get_best_score_per_experiment(data, "F1", maximum = TRUE)
+oracleHammingScaled <- get_best_score_per_experiment(data, "Hamming_scaled", maximum = FALSE)
 
 aic$score <- "AIC"
 bic$score <- "BIC"
-oracle$score <- "Oracle"
+oracleF1$score <- "OracleF1"
+oracleHammingScaled$score <- "OracleHamming"
 
-best_scores <- do.call("rbind", list(aic, bic, oracle))
+best_scores <- do.call("rbind", list(aic, bic, oracleF1, oracleHammingScaled))
 
 readr::write_rds(best_scores, "results/best-scores.rds", compress = "gz")
