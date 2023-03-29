@@ -1,7 +1,7 @@
 library(batchtools)
 library(CVN) 
 library(CVNSim)
-library(tidyverse)
+library(dplyr)
 library(hmeasure)
 
 options(batchtools.verbose = TRUE)
@@ -14,6 +14,7 @@ options(stringsAsFactors = FALSE)
 #' For debugging. Only a limited number of parameter settings is used, see 
 #' parameter-settings.R. Only 
 test_run <- TRUE  
+#' !!! Set this parameter in 'parameter-settings.R' as well
 
 # Total number of replications for each parameter setting
 if (test_run) { 
@@ -105,4 +106,4 @@ readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 source("process-results.R")
 
 # TODO create the plots
-#source("plots.R") 
+#source("plot.R") 
