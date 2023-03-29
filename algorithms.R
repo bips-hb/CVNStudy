@@ -95,13 +95,13 @@ cvn_wrapper <- function(data, job, instance, ...) {
   
   # TODO: Change with type of weight matrix
   #if (job$algo.pars$type_weight_matrix == "grid") { 
-  lambda1 = 1:2
-  lambda2 = 1:2
+  gamma1 = 1:2 / 1e5
+  gamma2 = 1:2 / 1e5
   #}
   
   # Apply the CVN algorithm 
-  fit <- CVN::CVN(instance$data, W, lambda1 = lambda1, 
-                  lambda2 = lambda2, eps = 10e-4, maxiter = 1000, verbose = TRUE)
+  fit <- CVN::CVN(instance$data, W, gamma1 = gamma1, 
+                  gamma2 = gamma2, eps = 10e-4, maxiter = 1000, verbose = TRUE)
   
   # add the truth 
   fit$truth <- instance$truth
