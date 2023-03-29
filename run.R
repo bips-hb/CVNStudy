@@ -33,7 +33,7 @@ start_from_scratch <- TRUE
 reg_name <- "cvnstudy"
 
 #' Packages and files to load
-packages = c("CVN", "CVNSim", "tidyverse", "hmeasure", "batchtools")
+packages = c("CVN", "CVNSim", "dplyr", "hmeasure", "batchtools")
 source = c("problems.R", "algorithms.R", "parameter-settings.R", 
            "create-weight-matrices.R")
 
