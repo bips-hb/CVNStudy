@@ -15,7 +15,7 @@ set.seed(1)
 
 #' For debugging. Only a limited number of parameter settings is used, see 
 #' parameter-settings.R. Only 
-test_run <- TRUE  
+test_run <- FALSE
 #' !!! Set this parameter in 'parameter-settings.R' as well
 
 # Total number of replications for each parameter setting
