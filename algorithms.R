@@ -101,7 +101,7 @@ cvn_wrapper <- function(data, job, instance, ...) {
   
   # Apply the CVN algorithm 
   fit <- CVN::CVN(instance$data, W, gamma1 = gamma1, 
-                  gamma2 = gamma2, eps = 10e-4, maxiter = 1000, verbose = TRUE)
+                  gamma2 = gamma2, eps = 10e-4, maxiter = 1000, n_cores = 1, verbose = TRUE)
   
   # add the truth 
   fit$truth <- instance$truth

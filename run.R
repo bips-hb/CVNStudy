@@ -9,6 +9,8 @@ options(stringsAsFactors = FALSE)
 
 # GLOBAL PARAMETERS ------------------------------------------------------------
 
+set.seed(1)
+
 # Debugging --------------------------
 
 #' For debugging. Only a limited number of parameter settings is used, see 
