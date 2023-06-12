@@ -29,21 +29,16 @@ create_boxplot <- function(data, row_settings, var = c("F1", "F2"),
   
   if (is.null(title)) { 
     if (row_settings$type == "scale-free") { 
-      graph_desc <- sprintf("(Scale-free, power coeff. %g)", row_settings$power)
+      graph_desc <- "(Scale-free)"
     } else { 
-      graph_desc <- sprintf("(Erdos-Rényi, prob. %g)", row_settings$probability)
+      graph_desc <- "(Erdos-Rényi)"
     }
-    title <- sprintf("p = %d, n = %d, weight matrix: %s %s", 
+    title <- sprintf("p = %d, n = %d, density = %g, weight matrix: %s %s", 
                      row_settings$p, 
-                     row_settings$n, 
+                     row_settings$n_obs, 
+                     row_settings$density, 
                      row_settings$type_weight_matrix, 
                      graph_desc)
-    
-    title <- sprintf("p = %d, n = %d, weight matrix: %s %s", 
-                     row_settings$p, row_settings$n_obs, 
-                     row_settings$type_weight_matrix, 
-                     graph_desc) 
-                  
   }
   
   ggplot(b, aes(x = score, y = get(var[1]), color = score)) + 

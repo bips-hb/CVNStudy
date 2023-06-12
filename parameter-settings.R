@@ -17,9 +17,9 @@ if (test_run) { # simplify the parameters for a test run - this is debugging
   sim_param <- dplyr::as_tibble(
     expand.grid(
       type = c("scale-free", "random"), 
-      p = c(10),  
+      p = c(20),  
       n_obs = c(50), 
-      density = c(0.1),
+      density = c(0.5),
       percentage_edges_x = c(.1), 
       percentage_edges_y = c(.2)
     )
@@ -30,11 +30,11 @@ if (test_run) { # simplify the parameters for a test run - this is debugging
   sim_param <- dplyr::as_tibble(
     expand.grid(
       type = c("scale-free", "random"), 
-      p = c(100, 250),  
-      n_obs = c(100, 250), 
+      p = c(100, 200),  
+      n_obs = c(100, 200), 
       density = c(0.05, 0.1),
-      percentage_edges_x = c(.1, .25), 
-      percentage_edges_y = c(.1, .25)
+      percentage_edges_x = c(.1, .5), 
+      percentage_edges_y = c(.1, .5)
     )
   )
   

@@ -95,8 +95,8 @@ cvn_wrapper <- function(data, job, instance, ...) {
   
   # TODO: Change with type of weight matrix
   #if (job$algo.pars$type_weight_matrix == "grid") { 
-  gamma1 = 1:2 / 1e5
-  gamma2 = 1:2 / 1e5
+  gamma1 = c(1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1)
+  gamma2 = c(1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1)
   #}
   
   # Apply the CVN algorithm 
@@ -107,7 +107,7 @@ cvn_wrapper <- function(data, job, instance, ...) {
   fit$truth <- instance$truth
   
   # save results 
-  filename <- paste("results/", paste(c("cvnsim", job$prob.pars, job$algo.pars, job$seed, job$repl), collapse = '_'), sep = '')
+  filename <- paste("results/", paste(c("cvnsim", job$prob.pars, job$algo.pars, job$seed, job$repl, '.rds'), collapse = '_'), sep = '')
   
   # store the fit and the truth in a file 
   readr::write_rds(fit, filename, compress = "gz")

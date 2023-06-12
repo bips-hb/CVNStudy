@@ -20,7 +20,7 @@ test_run <- TRUE
 
 # Total number of replications for each parameter setting
 if (test_run) { 
-  repls <- 1 
+  repls <- 1
 } else { 
   repls <- 20
 }
@@ -107,5 +107,5 @@ readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 # post-process the results
 source("process-results.R")
 
-# TODO create the plots
-#source("plot.R") 
+# create the plots
+source("plot.R") 
