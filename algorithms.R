@@ -95,8 +95,8 @@ cvn_wrapper <- function(data, job, instance, ...) {
   
   # TODO: Change with type of weight matrix
   #if (job$algo.pars$type_weight_matrix == "grid") { 
-  gamma1 = c(1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1)
-  gamma2 = c(1e-5, 1e-4, 1e-3, 1e-2, 1e-1, 1)
+  gamma1 = c(1e-5, 5e-5, 1e-4, 5e-4, 1e-3, 5e-3, 1e-2, 5e-2, 1e-1, .5, 1)
+  gamma2 = c(1e-5, 5e-5, 1e-4, 5e-4, 1e-3, 5e-3, 1e-2, 5e-2, 1e-1, .5, 1)
   #}
   
   # Apply the CVN algorithm 

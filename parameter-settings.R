@@ -31,7 +31,7 @@ if (test_run) { # simplify the parameters for a test run - this is debugging
     expand.grid(
       type = c("scale-free", "random"), 
       p = c(100, 200),  
-      n_obs = c(100, 200), 
+      n_obs = c(50, 100, 200), 
       density = c(0.05, 0.1),
       percentage_edges_x = c(.1, .5), 
       percentage_edges_y = c(.1, .5)
