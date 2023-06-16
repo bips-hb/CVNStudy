@@ -15,11 +15,11 @@ data <- readr::read_rds("results/raw-results.rds")
 get_best_score_per_experiment <- function(data, var = c("aic", "bic", "F1"), maximum = FALSE) { 
   if (maximum) { 
     return(
-      data %>% group_by(job.id, repl) %>% slice(which.max(get(var[1]))) %>% ungroup()
+      data %>% filter(is.finite(get(var[1]))) %>% group_by(job.id, repl) %>% slice(which.max(get(var[1]))) %>% ungroup()
     )
   } else {
     return(
-      data %>% group_by(job.id, repl) %>% slice(which.min(get(var[1]))) %>% ungroup()
+      data %>% filter(is.finite(get(var[1]))) %>% group_by(job.id, repl) %>% slice(which.min(get(var[1]))) %>% ungroup()
     )
   }
 }
