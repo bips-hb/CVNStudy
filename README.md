@@ -1,41 +1,30 @@
-# CVN Simulation Study
+# CVNStudy GitHub Repository
 
-## Included files:
-* `run.R`: Script to run entire simulation study
-* `config.R` and `torque.tmpl`: Config for the BIPS cluster -- don't change. See below.
+## Overview
 
-## Setup
+Welcome to the CVNStudy repository! This repository contains code for running simulations to assess the performance of the Covariate Varying Network (CVN) algorithm. The CVN algorithm is available at [github.com/bips-hb/CVN](https://www.github.com/bips-hb/CVN).
 
-You'll need some R packages: 
+Please note that this study relies on an R package under development at the BIPS for running simulation studies. You can find the package at [github.com/bips-hb/simtracker](https://www.github.com/bips-hb/simtracker). Keep in mind that the simtracker package is in very early stages of development.
 
-```r
-install.packages(c("CVN", "CVNSim", "tidyverse", "hmeasure", "batchtools", "ggplot2"))
-source("install-packages-github.R")
+## Installation
+
+To install the required packages, run the following command:
+
+```R
+source("install-github-packages.R")
 ```
 
-## First time cluster setup
+This command will ensure that the necessary dependencies, including the CVN algorithm and the simtracker package, are installed.
 
-- To use R, you have to load the R module on the cluster:
-  - List available R versions: `module avail R`
-  - Before loading an R module, you need `mpi`: `module load mpi/openmpi/1.8.5`
-- Automatically load modules on login by adding the following to your `~/.bashrc`:
+## Usage
 
-```sh
-module load mpi/openmpi/1.8.5
-module load R/4.0.2
-module list
-```
+The main file for running the simulations and processing the results is `run.R`. Execute this file to initiate the study. Please be aware that running the entire study may take a considerable amount of time due to the complexity of the CVN algorithm.
 
-- Copy the config files `config.R` and `torque.tmpl` from above to your configuration directory:
+## Additional Information
 
-```sh
-# create directory if needed
-mkdir -p ~/.config/batchtools/
-cp  config.R ~/.config/batchtools/
-cp  torque.tmpl ~/.config/batchtools/
-```
+For more details about the CVN algorithm and the study, please refer to our paper. The paper provides comprehensive information on the algorithm's performance and other relevant insights.
 
-# More info on the cluster, see: 
+## Contact
 
-- https://mllg.github.io/batchtools/index.html
-- https://github.com/bips-hb/batchtools_example
+If you have any questions or encounter issues, feel free to contact us. 
+
