@@ -1,6 +1,30 @@
 library(readr)
 library(dplyr)
 
+source("auxiliary.R")
+
+# load the simulation settings 
+simulation_settings <- simtracker::check_progress()
+
+# Check if all values in the "ran" column are TRUE
+if (!all(simulation_settings$ran)) {
+  # If not, issue a warning
+  warning("Not all results are in. Only the ones that are in will be taken into account.")
+}
+
+# Only keep the simulation settings that are done
+simulation_settings <- simulation_settings %>% filter(ran)
+
+lapply(1:nrow(simulation_settings), function(i) {
+  
+  parameters <- simulation_settings[i,]
+  
+  # read in the results
+  results <- readRDS(paste0('simulations/results/', parameters$filename))
+  
+  
+})
+
 # Function that take in the raw results stored 
 data <- readr::read_rds("results/raw-results.rds")
 

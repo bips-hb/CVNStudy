@@ -1,0 +1,28 @@
+Simulation folder for cvnstudy created successfully 
+Start or restart of the simulation 
+Checked the progress. Currently 0 out of 4 (0%) runs are done 
+Starting job:  1 
+Starting job:  2 
+Starting job:  3 
+Starting job:  4 
+Done with job: 4 
+Storing results for job 4 in the file random_20_50_0.5_0.1_0.2_2_2_FALSE_FALSE_4_4.rds 
+Done with job: 3 
+Storing results for job 3 in the file scale-free_20_50_0.5_0.1_0.2_1_2_FALSE_FALSE_3_3.rds 
+Done with job: 2 
+Storing results for job 2 in the file random_20_50_0.5_0.1_0.2_2_1_FALSE_FALSE_2_2.rds 
+Done with job: 1 
+Storing results for job 1 in the file scale-free_20_50_0.5_0.1_0.2_1_1_FALSE_FALSE_1_1.rds 
+SIMULATION STUDY DONE. All results are in the simulations/results/ folder 
+Parallel cluster stopped successfully. 
+Start or restart of the simulation 
+Checked the progress. Currently 4 out of 4 (100%) runs are done 
+Start or restart of the simulation 
+Checked the progress. Currently 4 out of 4 (100%) runs are done 
+Processing results... 
+Processing results of run 1 
+Processing results of run 2 
+Processing results of run 3 
+Processing results of run 4 
+DONE Processing results 
+Results are stored in simulations/processed-results.rds 

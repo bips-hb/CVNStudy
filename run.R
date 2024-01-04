@@ -25,27 +25,34 @@ n_repetitions <- 2
 n_workers <- 30
 
 # Initialize simulation settings based on the provided parameter settings and repetitions
-simulation_settings <- simtracker::initialize_simulation_settings(sim_param, n_repetitions)
+simulation_settings <- simtracker::initialize_simulation_settings(parameter_settings, n_repetitions)
 
 # Load the function applied to each parameter setting
 source("simulation-function.R")
+source("process-function.R")
+
+simulation_settings <- simtracker::check_progress()
 
 # Set up a parallel cluster for parallel processing
 cl <- simtracker::create_cluster(
   list_needed_functions_variables = list("simulation_settings",
-                                         "sim_fn"),
+                                         "sim_fn",
+                                         "process_fn"),
   num_workers = n_workers
 )
 
 # Load necessary libraries on each worker in the parallel cluster
 # IMPORTANT: There are no comma's between the libraries
 parallel::clusterEvalQ(cl, {
-  library(CVN)       
-  library(CVNSim)    
+  library(CVN)
+  library(CVNSim)
 })
 
 # Run the simulation study using the specified function
 simtracker::run_simulation_study(cl, sim_fn)
+
+# Processes the results from the simulation study
+simtracker::process_results_simulation(cl, process_fn)
 
 # Stop and clean up the parallel cluster
 simtracker::stop_cluster(cl)
