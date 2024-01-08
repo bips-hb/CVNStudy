@@ -1,3 +1,7 @@
+# NOTE: This script combines all the results of individual simulation runs. 
+# It uses the results produced by the simtracker::process_results_simulation 
+# function and puts all the results into a single file, in this case, 'best-scores.rds'.
+
 library(readr)
 library(dplyr)
 
