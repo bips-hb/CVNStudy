@@ -26,3 +26,34 @@ Processing results of run 3
 Processing results of run 4 
 DONE Processing results 
 Results are stored in simulations/processed-results.rds 
+Start or restart of the simulation 
+Checked the progress. Currently 4 out of 4 (100%) runs are done 
+Processing results... 
+Processing results of run 1 
+Processing results of run 2 
+Processing results of run 3 
+Processing results of run 4 
+Parallel cluster stopped successfully. 
+Start or restart of the simulation 
+Checked the progress. Currently 4 out of 4 (100%) runs are done 
+Processing results... 
+Processing results of run 1 
+Processing results of run 2 
+Processing results of run 4 
+Processing results of run 3 
+Parallel cluster stopped successfully. 
+Start or restart of the simulation 
+Checked the progress. Currently 4 out of 4 (100%) runs are done 
+Processing results... 
+Processing results of run 2 
+Processing results of run 1 
+Processing results of run 3 
+Processing results of run 4 
+Parallel cluster stopped successfully. 
+Processing results... 
+Processing results of run 1 
+Processing results of run 3 
+Processing results of run 4 
+Processing results of run 2 
+DONE Processing results 
+Results are stored in simulations/processed-results.rds 

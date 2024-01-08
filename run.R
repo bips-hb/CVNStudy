@@ -37,6 +37,9 @@ simulation_settings <- simtracker::check_progress()
 cl <- simtracker::create_cluster(
   list_needed_functions_variables = list("simulation_settings",
                                          "sim_fn",
+                                         "get_performance",
+                                         "get_classification_scores",
+                                         "adjacency_matrices_to_labels",
                                          "process_fn"),
   num_workers = n_workers
 )
