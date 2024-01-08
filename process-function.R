@@ -177,5 +177,6 @@ process_fn <- function(simulation_result) {
   
   performance$type_weight_matrix <- as.factor(performance$type_weight_matrix)
   
+  performance <- cbind(performance, simulation_result$parameters)
   return(performance)
 }

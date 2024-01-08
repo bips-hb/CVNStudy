@@ -19,13 +19,13 @@ source("parameter-settings.R")
 sim_param <- generate_sim_param(test_run = TRUE)
 
 # Number of repetitions for each set of parameters
-n_repetitions <- 2
+n_repetitions <- 4
 
 # Number of parallel workers to use (max. is 50)
 n_workers <- 30
 
 # Initialize simulation settings based on the provided parameter settings and repetitions
-simulation_settings <- simtracker::initialize_simulation_settings(parameter_settings, n_repetitions)
+simulation_settings <- simtracker::initialize_simulation_settings(sim_param, n_repetitions)
 
 # Load the function applied to each parameter setting
 source("simulation-function.R")

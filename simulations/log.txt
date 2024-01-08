@@ -1,59 +1,75 @@
 Simulation folder for cvnstudy created successfully 
 Start or restart of the simulation 
-Checked the progress. Currently 0 out of 4 (0%) runs are done 
-Starting job:  1 
+Checked the progress. Currently 0 out of 8 (0%) runs are done 
 Starting job:  2 
 Starting job:  3 
+Starting job:  1 
 Starting job:  4 
+Starting job:  6 
+Starting job:  5 
+Starting job:  7 
+Starting job:  8 
+Done with job: 6 
+Storing results for job 6 in the file random_20_50_0.5_0.1_0.2_2_3_FALSE_FALSE_6_6.rds 
+Done with job: 7 
+Storing results for job 7 in the file scale-free_20_50_0.5_0.1_0.2_1_4_FALSE_FALSE_7_7.rds 
 Done with job: 4 
 Storing results for job 4 in the file random_20_50_0.5_0.1_0.2_2_2_FALSE_FALSE_4_4.rds 
+Done with job: 5 
+Storing results for job 5 in the file scale-free_20_50_0.5_0.1_0.2_1_3_FALSE_FALSE_5_5.rds 
 Done with job: 3 
 Storing results for job 3 in the file scale-free_20_50_0.5_0.1_0.2_1_2_FALSE_FALSE_3_3.rds 
+Done with job: 8 
+Storing results for job 8 in the file random_20_50_0.5_0.1_0.2_2_4_FALSE_FALSE_8_8.rds 
 Done with job: 2 
 Storing results for job 2 in the file random_20_50_0.5_0.1_0.2_2_1_FALSE_FALSE_2_2.rds 
 Done with job: 1 
 Storing results for job 1 in the file scale-free_20_50_0.5_0.1_0.2_1_1_FALSE_FALSE_1_1.rds 
 SIMULATION STUDY DONE. All results are in the simulations/results/ folder 
-Parallel cluster stopped successfully. 
-Start or restart of the simulation 
-Checked the progress. Currently 4 out of 4 (100%) runs are done 
-Start or restart of the simulation 
-Checked the progress. Currently 4 out of 4 (100%) runs are done 
 Processing results... 
 Processing results of run 1 
 Processing results of run 2 
 Processing results of run 3 
 Processing results of run 4 
+Processing results of run 5 
+Processing results of run 8 
+Processing results of run 7 
+Processing results of run 6 
 DONE Processing results 
 Results are stored in simulations/processed-results.rds 
-Start or restart of the simulation 
-Checked the progress. Currently 4 out of 4 (100%) runs are done 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 3 
-Processing results of run 4 
-Parallel cluster stopped successfully. 
-Start or restart of the simulation 
-Checked the progress. Currently 4 out of 4 (100%) runs are done 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 4 
-Processing results of run 3 
-Parallel cluster stopped successfully. 
-Start or restart of the simulation 
-Checked the progress. Currently 4 out of 4 (100%) runs are done 
-Processing results... 
-Processing results of run 2 
-Processing results of run 1 
-Processing results of run 3 
-Processing results of run 4 
 Parallel cluster stopped successfully. 
 Processing results... 
+Processing results... 
 Processing results of run 1 
+Processing results of run 2 
 Processing results of run 3 
 Processing results of run 4 
+Processing results of run 5 
+Processing results of run 6 
+Processing results of run 7 
+Processing results of run 8 
+DONE Processing results 
+Results are stored in simulations/processed-results.rds 
+Processing results... 
+Processing results... 
+Processing results of run 1 
 Processing results of run 2 
+Processing results of run 3 
+Processing results of run 4 
+Processing results of run 5 
+Processing results of run 6 
+Processing results of run 7 
+Processing results of run 8 
+DONE Processing results 
+Results are stored in simulations/processed-results.rds 
+Processing results... 
+Processing results of run 1 
+Processing results of run 2 
+Processing results of run 3 
+Processing results of run 4 
+Processing results of run 5 
+Processing results of run 6 
+Processing results of run 7 
+Processing results of run 8 
 DONE Processing results 
 Results are stored in simulations/processed-results.rds 
