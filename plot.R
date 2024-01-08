@@ -7,10 +7,12 @@ library(dplyr)
 library(ggplot2)
 
 # Load simulation results data
-data <- readr::read_rds("results/best-scores.rds")
+data <- readr::read_rds("simulations/best-scores.rds")
 
 # Load parameter settings
 source("parameter-settings.R")
+
+sim_param <- generate_sim_param(test_run = TRUE)
 
 # Merge simulation and algorithm parameter settings
 sim_param
