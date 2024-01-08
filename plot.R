@@ -1,18 +1,23 @@
-# create all figures  
+# NOTE: This script is currently designed for batchtools and needs to be 
+# updated for simtracker.
 
+# Load required libraries
 library(readr)
 library(dplyr)
 library(ggplot2)
 
-# load data
+# Load simulation results data
 data <- readr::read_rds("results/best-scores.rds")
 
+# Load parameter settings
 source("parameter-settings.R")
 
+# Merge simulation and algorithm parameter settings
 sim_param
 algo_param
 settings <- merge(sim_param, algo_param)
 
+# Function to get a subset of data based on row_settings
 get_subset <- function(data, row_settings) { 
   data %>% filter(
     sim_param_id == row_settings$sim_param_id, 
@@ -20,8 +25,10 @@ get_subset <- function(data, row_settings) {
   )
 }
 
+# Initial subset based on the first row of settings
 b = get_subset(data, settings[1,])
 
+# Function to create a boxplot from a given data and row_settings
 create_boxplot <- function(data, row_settings, var = c("F1", "F2"), 
                            xlabel = "Selection method", title = NULL) { 
   
@@ -50,17 +57,17 @@ create_boxplot <- function(data, row_settings, var = c("F1", "F2"),
     theme_classic()
 }
 
+# Loop through each row in settings and create boxplots
 for (i in 1:nrow(settings)) { 
   row_settings <- settings[i, ]
   
   p <- create_boxplot(data, row_settings, var = "F1")  
-
+  
+  # Generate a filename based on the row_settings
   filename <- paste0(lapply(as.list(row_settings), function(x) as.character(x)), collapse = "_")
+  filename <- paste0("figures/", filename, ".pdf", collapse = "")
   
-  filename <- paste0("figures/", filename, collapse = "")
-  
-  filename <- paste0(filename, ".pdf", collapse = "")
-  
+  # Save the boxplot as a PDF
   ggplot2::ggsave(
     filename,
     p,
@@ -75,5 +82,5 @@ for (i in 1:nrow(settings)) {
     bg = NULL
   )
 }
-create_boxplot(data, settings[3,])
 
+create_boxplot(data, settings[3,])
