@@ -55,10 +55,13 @@ parallel::clusterEvalQ(cl, {
 simtracker::run_simulation_study(cl, sim_fn)
 
 # Processes the results from the simulation study
-simtracker::process_results_simulation(cl, process_fn)
+simtracker::process_results_simulation(cl = NULL, process_fn)
 
 # Stop and clean up the parallel cluster
 simtracker::stop_cluster(cl)
+
+# Process the results from the individual simulation runs 
+source("process-results-all-runs.R")
 
 # Uncomment the line below to delete the entire simulation directory (use with caution)
 # simtracker::reset_simulation()

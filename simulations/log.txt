@@ -73,3 +73,14 @@ Processing results of run 7
 Processing results of run 8 
 DONE Processing results 
 Results are stored in simulations/processed-results.rds 
+Processing results... 
+Processing results of run 1 
+Processing results of run 2 
+Processing results of run 3 
+Processing results of run 4 
+Processing results of run 5 
+Processing results of run 6 
+Processing results of run 7 
+Processing results of run 8 
+DONE Processing results 
+Results are stored in simulations/processed-results.rds 
