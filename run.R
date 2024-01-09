@@ -16,13 +16,13 @@ source("parameter-settings.R")
 # Generate simulation parameter settings with a test run (simplified parameters for debugging)
 # In a test run, a limited number of parameter settings is used, and it's typically set to TRUE for debugging purposes.
 # This allows for quicker testing and debugging with a smaller set of parameters.
-sim_param <- generate_sim_param(test_run = TRUE)
+sim_param <- generate_sim_param(test_run = FALSE)
 
 # Number of repetitions for each set of parameters
-n_repetitions <- 4
+n_repetitions <- 20
 
 # Number of parallel workers to use (max. is 50)
-n_workers <- 30
+n_workers <- 50
 
 # Initialize simulation settings based on the provided parameter settings and repetitions
 simulation_settings <- simtracker::initialize_simulation_settings(sim_param, n_repetitions)
@@ -55,7 +55,7 @@ parallel::clusterEvalQ(cl, {
 simtracker::run_simulation_study(cl, sim_fn)
 
 # Processes the results from the simulation study
-simtracker::process_results_simulation(cl = NULL, process_fn)
+simtracker::process_results_simulation(cl, process_fn)
 
 # Stop and clean up the parallel cluster
 simtracker::stop_cluster(cl)

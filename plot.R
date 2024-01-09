@@ -12,7 +12,7 @@ data <- readr::read_rds("simulations/best-scores.rds")
 # Load parameter settings
 source("parameter-settings.R")
 
-sim_param <- generate_sim_param(test_run = TRUE)
+sim_param <- generate_sim_param(test_run = FALSE)
 
 # Merge simulation and algorithm parameter settings
 sim_param
