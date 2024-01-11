@@ -25,7 +25,10 @@ n_repetitions <- 20
 n_workers <- 30
 
 # Initialize simulation settings based on the provided parameter settings and repetitions
-simulation_settings <- simtracker::initialize_simulation_settings(sim_param, n_repetitions)
+simulation_settings <- simtracker::initialize_simulation_settings(parameter_settings, n_repetitions)
+
+# If the simulation settings were already initialized, one can also use this function
+# simulation_settings <- simtracker::load_simulation_settings()
 
 # Load the function applied to each parameter setting
 source("simulation-function.R")
@@ -41,7 +44,8 @@ cl <- simtracker::create_cluster(
                                          "get_classification_scores",
                                          "adjacency_matrices_to_labels",
                                          "process_fn"),
-  num_workers = n_workers
+  num_workers = n_workers,
+  cluster_type = 'PSOCK' # Default for the workstation. See additional comments
 )
 
 # Load necessary libraries on each worker in the parallel cluster
