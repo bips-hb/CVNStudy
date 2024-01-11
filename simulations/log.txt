@@ -1,86 +1,66 @@
 Simulation folder for cvnstudy created successfully 
 Start or restart of the simulation 
-Checked the progress. Currently 0 out of 8 (0%) runs are done 
-Starting job:  2 
-Starting job:  3 
+Checked the progress. Currently 0 out of 640 (0%) runs are done 
+Starting job:  14 
+Starting job:  39 
 Starting job:  1 
-Starting job:  4 
-Starting job:  6 
-Starting job:  5 
-Starting job:  7 
-Starting job:  8 
-Done with job: 6 
-Storing results for job 6 in the file random_20_50_0.5_0.1_0.2_2_3_FALSE_FALSE_6_6.rds 
-Done with job: 7 
-Storing results for job 7 in the file scale-free_20_50_0.5_0.1_0.2_1_4_FALSE_FALSE_7_7.rds 
-Done with job: 4 
-Storing results for job 4 in the file random_20_50_0.5_0.1_0.2_2_2_FALSE_FALSE_4_4.rds 
-Done with job: 5 
-Storing results for job 5 in the file scale-free_20_50_0.5_0.1_0.2_1_3_FALSE_FALSE_5_5.rds 
-Done with job: 3 
-Storing results for job 3 in the file scale-free_20_50_0.5_0.1_0.2_1_2_FALSE_FALSE_3_3.rds 
-Done with job: 8 
-Storing results for job 8 in the file random_20_50_0.5_0.1_0.2_2_4_FALSE_FALSE_8_8.rds 
-Done with job: 2 
-Storing results for job 2 in the file random_20_50_0.5_0.1_0.2_2_1_FALSE_FALSE_2_2.rds 
-Done with job: 1 
-Storing results for job 1 in the file scale-free_20_50_0.5_0.1_0.2_1_1_FALSE_FALSE_1_1.rds 
-SIMULATION STUDY DONE. All results are in the simulations/results/ folder 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 3 
-Processing results of run 4 
-Processing results of run 5 
-Processing results of run 8 
-Processing results of run 7 
-Processing results of run 6 
-DONE Processing results 
-Results are stored in simulations/processed-results.rds 
+Starting job:  90Starting job:  65  
+
+Starting job:  52 
+Starting job:  308 
+Starting job:  180 
+Starting job:  116 
+Starting job:  129 
+Starting job:  78 
+Starting job:  142Starting job:  206  
+
+Starting job:  167 
+Starting job:  155 
+Starting job:  257 
+Starting job:  270 
+Starting job:  219 
+Starting job:  231 
+Starting job:  398 
+Starting job:  295Starting job:  283  
+
+Starting job:  385 
+Starting job:  321 
+Starting job:  334 
+Starting job:  359 
+Starting job:  372 
+Starting job:  423 
+Starting job:  411 
+Starting job:  436 
+Starting job:  449 
+Starting job:  462 
+Starting job:  475 
+Starting job:  26 
+Starting job:  487 
+Starting job:  500 
+Starting job:  526 
+Starting job:  539Starting job:  552  
+
+Starting job:  103 
+Starting job:  564 
+Starting job:  244 
+Starting job:  577 
+Starting job:  193 
+Starting job:  616 
+Starting job:  590 
+Starting job:  628 
+Starting job:  347 
+Starting job:  513 
+Starting job:  603 
 Parallel cluster stopped successfully. 
-Processing results... 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 3 
-Processing results of run 4 
-Processing results of run 5 
-Processing results of run 6 
-Processing results of run 7 
-Processing results of run 8 
-DONE Processing results 
-Results are stored in simulations/processed-results.rds 
-Processing results... 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 3 
-Processing results of run 4 
-Processing results of run 5 
-Processing results of run 6 
-Processing results of run 7 
-Processing results of run 8 
-DONE Processing results 
-Results are stored in simulations/processed-results.rds 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 3 
-Processing results of run 4 
-Processing results of run 5 
-Processing results of run 6 
-Processing results of run 7 
-Processing results of run 8 
-DONE Processing results 
-Results are stored in simulations/processed-results.rds 
-Processing results... 
-Processing results of run 1 
-Processing results of run 2 
-Processing results of run 3 
-Processing results of run 4 
-Processing results of run 5 
-Processing results of run 6 
-Processing results of run 7 
-Processing results of run 8 
-DONE Processing results 
-Results are stored in simulations/processed-results.rds 
+Done with job: 359 
+Storing results for job 359 in the file scale-free_200_200_0.1_0.1_0.1_ 7_12_FALSE_FALSE_359_359.rds 
+Starting job:  360 
+Done with job: 103 
+Storing results for job 103 in the file scale-free_200_200_0.1_0.1_0.1_ 7_ 4_FALSE_FALSE_103_103.rds 
+Starting job:  104 
+Done with job: 295 
+Storing results for job 295 in the file scale-free_200_200_0.1_0.1_0.1_ 7_10_FALSE_FALSE_295_295.rds 
+Starting job:  296 
+Done with job: 104 
+Storing results for job 104 in the file random_200_200_0.1_0.1_0.1_ 8_ 4_FALSE_FALSE_104_104.rds 
+Starting job:  105 
