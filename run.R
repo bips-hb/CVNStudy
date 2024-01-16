@@ -25,7 +25,7 @@ n_repetitions <- 20
 n_workers <- 30
 
 # Initialize simulation settings based on the provided parameter settings and repetitions
-simulation_settings <- simtracker::initialize_simulation_settings(parameter_settings, n_repetitions)
+simulation_settings <- simtracker::initialize_simulation_settings(sim_param, n_repetitions)
 
 # If the simulation settings were already initialized, one can also use this function
 # simulation_settings <- simtracker::load_simulation_settings()
