@@ -1,66 +1,715 @@
-Simulation folder for cvnstudy created successfully 
-Start or restart of the simulation 
-Checked the progress. Currently 0 out of 640 (0%) runs are done 
-Starting job:  14 
-Starting job:  39 
-Starting job:  1 
-Starting job:  90Starting job:  65  
+(13:04:34 2024-01-16) Simulation folder for cvnstudy created successfully 
+(13:10:00 2024-01-16) Start or restart of the simulation at 2024-01-16 13:10:00.170755 
+(13:10:00 2024-01-16) Checked the progress. Currently 0 out of 640 (0%) runs are done 
+(13:10:00 2024-01-16) Starting job:  129 
+(13:10:00 2024-01-16) Starting job:  1 
+(13:10:00 2024-01-16) Starting job:  22 
+(13:10:00 2024-01-16) Starting job:  44 
+(13:10:00 2024-01-16) Starting job:  108 
+(13:10:00 2024-01-16) Starting job:  86 
+(13:10:00 2024-01-16) Starting job:  65 
+(13:10:00 2024-01-16) Starting job:  172 
+(13:10:00 2024-01-16) Starting job:  150 
+(13:10:00 2024-01-16) Starting job:  193 
+(13:10:00 2024-01-16) Starting job:  214 
+(13:10:00 2024-01-16) Starting job:  236 
+(13:10:00 2024-01-16) Starting job:  257 
+(13:10:00 2024-01-16) Starting job:  278 
+(13:10:00 2024-01-16) (13:10:00 2024-01-16) Starting job:  321Starting job:  342  
 
-Starting job:  52 
-Starting job:  308 
-Starting job:  180 
-Starting job:  116 
-Starting job:  129 
-Starting job:  78 
-Starting job:  142Starting job:  206  
+(13:10:00 2024-01-16) Starting job:  385 
+(13:10:00 2024-01-16) Starting job:  300 
+(13:10:00 2024-01-16) Starting job:  470 
+(13:10:00 2024-01-16) Starting job:  364 
+(13:10:00 2024-01-16) Starting job:  556 
+(13:10:00 2024-01-16) Starting job:  406 
+(13:10:00 2024-01-16) Starting job:  577 
+(13:10:00 2024-01-16) Starting job:  428 
+(13:10:00 2024-01-16) (13:10:00 2024-01-16) Starting job:  492 Starting job:  449
+ 
+(13:10:00 2024-01-16) Starting job:  598 
+(13:10:00 2024-01-16) Starting job:  620 
+(13:10:00 2024-01-16) Starting job:  513 
+(13:10:00 2024-01-16) Starting job:  534 
+(03:52:28 2024-01-17) Done with job: 534 
+(03:52:28 2024-01-17) Storing results for job 534 in the file random_100_200_0.1_0.1_0.2_22_17_FALSE_FALSE_534_534.rds 
+(03:52:36 2024-01-17) Starting job:  535 
+(03:57:10 2024-01-17) Done with job: 406 
+(03:57:10 2024-01-17) Storing results for job 406 in the file random_100_200_0.1_0.1_0.2_22_13_FALSE_FALSE_406_406.rds 
+(03:57:19 2024-01-17) Starting job:  407 
+(04:18:15 2024-01-17) Done with job: 86 
+(04:18:15 2024-01-17) Storing results for job 86 in the file random_100_200_0.1_0.1_0.2_22_ 3_FALSE_FALSE_ 86_ 86.rds 
+(04:18:23 2024-01-17) Done with job: 342 
+(04:18:23 2024-01-17) Storing results for job 342 in the file random_100_200_0.1_0.1_0.2_22_11_FALSE_FALSE_342_342.rds 
+(04:18:25 2024-01-17) Starting job:  87 
+(04:18:30 2024-01-17) Starting job:  343 
+(04:35:52 2024-01-17) Done with job: 22 
+(04:35:52 2024-01-17) Storing results for job 22 in the file random_100_200_0.1_0.1_0.2_22_ 1_FALSE_FALSE_ 22_ 22.rds 
+(04:36:00 2024-01-17) Starting job:  23 
+(23:28:08 2024-01-17) Done with job: 428 
+(23:28:08 2024-01-17) Storing results for job 428 in the file random_200_100_0.1_0.2_0.1_12_14_FALSE_FALSE_428_428.rds 
+(23:28:14 2024-01-17) Starting job:  429 
+(23:32:11 2024-01-17) Done with job: 108 
+(23:32:11 2024-01-17) Storing results for job 108 in the file random_200_100_0.1_0.2_0.1_12_ 4_FALSE_FALSE_108_108.rds 
+(23:32:16 2024-01-17) Starting job:  109 
+(00:37:34 2024-01-18) Done with job: 109 
+(00:37:34 2024-01-18) Storing results for job 109 in the file scale-free_100_200_0.1_0.2_0.1_13_ 4_FALSE_FALSE_109_109.rds 
+(00:37:36 2024-01-18) Starting job:  110 
+(00:40:05 2024-01-18) Done with job: 429 
+(00:40:05 2024-01-18) Storing results for job 429 in the file scale-free_100_200_0.1_0.2_0.1_13_14_FALSE_FALSE_429_429.rds 
+(00:40:07 2024-01-18) Starting job:  430 
+(01:48:25 2024-01-18) Done with job: 430 
+(01:48:25 2024-01-18) Storing results for job 430 in the file random_100_200_0.1_0.2_0.1_14_14_FALSE_FALSE_430_430.rds 
+(01:48:27 2024-01-18) Starting job:  431 
+(07:16:58 2024-01-18) Done with job: 431 
+(07:16:58 2024-01-18) Storing results for job 431 in the file scale-free_200_200_0.1_0.2_0.1_15_14_FALSE_FALSE_431_431.rds 
+(07:17:03 2024-01-18) Starting job:  432 
+(12:34:18 2024-01-19) Start or restart of the simulation at 2024-01-19 12:34:18.76503 
+(12:34:18 2024-01-19) Checked the progress. Currently 11 out of 640 (1.71875%) runs are done 
+(12:34:18 2024-01-19) (12:34:18 2024-01-19) (12:34:18 2024-01-19) (12:34:18 2024-01-19) (12:34:18 2024-01-19) (12:34:18 2024-01-19) (12:34:18 2024-01-19) (12:34:18 2024-01-19) Starting job:  441Starting job:  64Starting job:  378Starting job:  1Starting job:  253Starting job:  316Starting job:  567    Starting job:  190   
 
-Starting job:  167 
-Starting job:  155 
-Starting job:  257 
-Starting job:  270 
-Starting job:  219 
-Starting job:  231 
-Starting job:  398 
-Starting job:  295Starting job:  283  
 
-Starting job:  385 
-Starting job:  321 
-Starting job:  334 
-Starting job:  359 
-Starting job:  372 
-Starting job:  423 
-Starting job:  411 
-Starting job:  436 
-Starting job:  449 
-Starting job:  462 
+
+ 
+
+
+
+(12:34:18 2024-01-19) Starting job:  127 
+(12:34:18 2024-01-19) Starting job:  504 
+(21:23:01 2024-01-19) Done with job: 1 
+(21:23:01 2024-01-19) Storing results for job 1 in the file scale-free_100_100_0.1_0.1_0.1_ 1_ 1_FALSE_FALSE_  1_  1.rds 
+(21:23:07 2024-01-19) Starting job:  2 
+(21:23:17 2024-01-19) Done with job: 253 
+(21:23:17 2024-01-19) Storing results for job 253 in the file scale-free_100_100_0.1_0.1_0.1_ 1_ 9_FALSE_FALSE_257_257.rds 
+(21:23:22 2024-01-19) Starting job:  254 
+(21:31:31 2024-01-19) Done with job: 64 
+(21:31:31 2024-01-19) Storing results for job 64 in the file scale-free_100_100_0.1_0.1_0.1_ 1_ 3_FALSE_FALSE_ 65_ 65.rds 
+(21:31:35 2024-01-19) Starting job:  65 
+(21:39:16 2024-01-19) Done with job: 190 
+(21:39:16 2024-01-19) Storing results for job 190 in the file random_100_100_0.1_0.1_0.1_ 2_ 7_FALSE_FALSE_194_194.rds 
+(21:39:21 2024-01-19) Starting job:  191 
+(21:48:37 2024-01-19) Done with job: 504 
+(21:48:37 2024-01-19) Storing results for job 504 in the file random_100_100_0.1_0.1_0.1_ 2_17_FALSE_FALSE_514_514.rds 
+(21:48:43 2024-01-19) Starting job:  505 
+(21:56:08 2024-01-19) Done with job: 567 
+(21:56:08 2024-01-19) Storing results for job 567 in the file random_100_100_0.1_0.1_0.1_ 2_19_FALSE_FALSE_578_578.rds 
+(21:56:14 2024-01-19) Starting job:  568 
+(04:19:33 2024-01-20) Done with job: 65 
+(04:19:33 2024-01-20) Storing results for job 65 in the file random_100_100_0.1_0.1_0.1_ 2_ 3_FALSE_FALSE_ 66_ 66.rds 
+(04:19:35 2024-01-20) Starting job:  66 
+(09:15:28 2024-01-20) Done with job: 378 
+(09:15:28 2024-01-20) Storing results for job 378 in the file scale-free_200_200_0.1_0.2_0.2_31_12_FALSE_FALSE_383_383.rds 
+(09:15:36 2024-01-20) Starting job:  379 
+(09:56:41 2024-01-20) Done with job: 316 
+(09:56:41 2024-01-20) Storing results for job 316 in the file random_200_200_0.1_0.2_0.2_32_10_FALSE_FALSE_320_320.rds 
+(09:56:47 2024-01-20) Starting job:  317 
+(11:56:08 2024-01-20) Done with job: 317 
+(11:56:08 2024-01-20) Storing results for job 317 in the file scale-free_100_100_0.1_0.1_0.1_ 1_11_FALSE_FALSE_321_321.rds 
+(11:56:10 2024-01-20) Starting job:  318 
+(12:13:34 2024-01-20) Done with job: 441 
+(12:13:34 2024-01-20) Storing results for job 441 in the file scale-free_200_100_0.1_0.1_0.1_ 3_15_FALSE_FALSE_451_451.rds 
+(12:13:40 2024-01-20) Starting job:  442 
+(13:58:49 2024-01-20) Done with job: 318 
+(13:58:49 2024-01-20) Storing results for job 318 in the file random_100_100_0.1_0.1_0.1_ 2_11_FALSE_FALSE_322_322.rds 
+(13:58:51 2024-01-20) Starting job:  319 
+(21:59:49 2024-01-20) Done with job: 319 
+(21:59:49 2024-01-20) Storing results for job 319 in the file scale-free_200_100_0.1_0.1_0.1_ 3_11_FALSE_FALSE_323_323.rds 
+(21:59:55 2024-01-20) Starting job:  320 
+(15:38:16 2024-01-21) Start or restart of the simulation at 2024-01-21 15:38:16.839095 
+(15:38:16 2024-01-21) Checked the progress. Currently 24 out of 640 (3.75%) runs are done 
+(15:38:17 2024-01-21) (15:38:17 2024-01-21) (15:38:17 2024-01-21) (15:38:17 2024-01-21) (15:38:17 2024-01-21) Starting job:  63Starting job:  494Starting job:  247Starting job:  1  Starting job:  371(15:38:17 2024-01-21)   
+
+ 
+Starting job:  309 
+
+
+(15:38:17 2024-01-21) Starting job:  555 
+(15:38:17 2024-01-21) Starting job:  124 
+(15:38:17 2024-01-21) Starting job:  186 
+(15:38:17 2024-01-21) Starting job:  432 
+(15:38:35 2024-01-21) Start or restart of the simulation at 2024-01-21 15:38:35.784762 
+(15:38:35 2024-01-21) Checked the progress. Currently 24 out of 640 (3.75%) runs are done 
+(15:38:35 2024-01-21) Starting job:  247 
+(15:38:35 2024-01-21) Starting job:  1 
+(15:38:35 2024-01-21) Starting job:  63 
+(15:38:35 2024-01-21) Starting job:  124 
+(15:38:35 2024-01-21) Starting job:  186 
+(15:38:35 2024-01-21) Starting job:  309 
+(15:38:35 2024-01-21) Starting job:  371 
+(15:38:35 2024-01-21) Starting job:  555 
+(15:38:35 2024-01-21) Starting job:  432 
+(15:38:35 2024-01-21) Starting job:  494 
+(21:22:53 2024-01-21) Done with job: 432 
+(21:22:53 2024-01-21) Storing results for job 432 in the file scale-free_100_200_0.1_0.1_0.1_ 5_15_FALSE_FALSE_453_453.rds 
+(21:22:58 2024-01-21) Starting job:  433 
+(21:57:48 2024-01-21) Done with job: 309 
+(21:57:48 2024-01-21) Storing results for job 309 in the file random_100_200_0.1_0.2_0.2_30_10_FALSE_FALSE_318_318.rds 
+(21:57:52 2024-01-21) Starting job:  310 
+(00:40:59 2024-01-22) Done with job: 186 
+(00:40:59 2024-01-22) Storing results for job 186 in the file scale-free_100_100_0.1_0.1_0.1_ 1_ 7_FALSE_FALSE_193_193.rds 
+(00:41:03 2024-01-22) Starting job:  187 
+(00:49:10 2024-01-22) Done with job: 371 
+(00:49:10 2024-01-22) Storing results for job 371 in the file random_100_100_0.1_0.1_0.1_ 2_13_FALSE_FALSE_386_386.rds 
+(00:49:15 2024-01-22) Starting job:  372 
+(01:08:37 2024-01-22) Done with job: 1 
+(01:08:37 2024-01-22) Storing results for job 1 in the file random_100_100_0.1_0.1_0.1_ 2_ 1_FALSE_FALSE_  2_  2.rds 
+(01:08:44 2024-01-22) Starting job:  2 
+(03:39:17 2024-01-22) Done with job: 433 
+(03:39:17 2024-01-22) Storing results for job 433 in the file random_100_200_0.1_0.1_0.1_ 6_15_FALSE_FALSE_454_454.rds 
+(03:39:22 2024-01-22) Starting job:  434 
+(11:49:46 2024-01-22) Done with job: 247 
+(11:49:46 2024-01-22) Storing results for job 247 in the file scale-free_200_200_0.1_0.2_0.2_31_ 8_FALSE_FALSE_255_255.rds 
+(11:49:53 2024-01-22) Starting job:  248 
+(15:35:47 2024-01-22) Done with job: 63 
+(15:35:47 2024-01-22) Storing results for job 63 in the file scale-free_200_100_0.1_0.1_0.1_ 3_ 3_FALSE_FALSE_ 67_ 67.rds 
+(15:35:53 2024-01-22) Starting job:  64 
+(15:49:11 2024-01-22) Done with job: 494 
+(15:49:11 2024-01-22) Storing results for job 494 in the file random_200_100_0.1_0.1_0.1_ 4_17_FALSE_FALSE_516_516.rds 
+(15:49:17 2024-01-22) Starting job:  495 
+(17:11:20 2024-01-22) Done with job: 495 
+(17:11:20 2024-01-22) Storing results for job 495 in the file scale-free_100_200_0.1_0.1_0.1_ 5_17_FALSE_FALSE_517_517.rds 
+(17:11:22 2024-01-22) Starting job:  496 
+(18:27:10 2024-01-22) Done with job: 496 
+(18:27:10 2024-01-22) Storing results for job 496 in the file random_100_200_0.1_0.1_0.1_ 6_17_FALSE_FALSE_518_518.rds 
+(18:27:11 2024-01-22) Starting job:  497 
+(23:50:01 2024-01-22) Done with job: 497 
+(23:50:01 2024-01-22) Storing results for job 497 in the file scale-free_200_200_0.1_0.1_0.1_ 7_17_FALSE_FALSE_519_519.rds 
+(23:50:07 2024-01-22) Starting job:  498 
+(19:08:09 2024-01-25) Start or restart of the simulation at 2024-01-25 19:08:09.437723 
+(19:08:09 2024-01-25) Checked the progress. Currently 36 out of 640 (5.625%) runs are done 
+(19:08:09 2024-01-25) (19:08:09 2024-01-25) Starting job:  303(19:08:09 2024-01-25)  Starting job:  182
+ Starting job:  1
+ 
+(19:08:09 2024-01-25) Starting job:  61 
+(19:08:09 2024-01-25) Starting job:  122 
+(19:08:09 2024-01-25) Starting job:  424 
+(19:08:09 2024-01-25) (19:08:09 2024-01-25) Starting job:  243 Starting job:  363
+ 
+(19:08:09 2024-01-25) Starting job:  484 
+(19:08:09 2024-01-25) Starting job:  545 
+(01:35:26 2024-01-26) Done with job: 545 
+(01:35:26 2024-01-26) Storing results for job 545 in the file scale-free_100_200_0.1_0.1_0.1_ 5_19_FALSE_FALSE_581_581.rds 
+(01:35:32 2024-01-26) Starting job:  546 
+(01:47:51 2024-01-26) Done with job: 363 
+(01:47:51 2024-01-26) Storing results for job 363 in the file random_100_200_0.1_0.2_0.2_30_12_FALSE_FALSE_382_382.rds 
+(01:47:56 2024-01-26) Starting job:  364 
+(01:48:16 2024-01-26) Done with job: 243 
+(01:48:16 2024-01-26) Storing results for job 243 in the file random_100_200_0.1_0.2_0.2_30_ 8_FALSE_FALSE_254_254.rds 
+(01:48:22 2024-01-26) Starting job:  244 
+(03:53:09 2024-01-26) Done with job: 484 
+(03:53:09 2024-01-26) Storing results for job 484 in the file scale-free_100_100_0.1_0.1_0.1_ 1_17_FALSE_FALSE_513_513.rds 
+(03:53:14 2024-01-26) Starting job:  485 
+(04:25:32 2024-01-26) Done with job: 424 
+(04:25:32 2024-01-26) Storing results for job 424 in the file random_100_100_0.1_0.1_0.1_ 2_15_FALSE_FALSE_450_450.rds 
+(04:25:39 2024-01-26) Starting job:  425 
+(07:46:35 2024-01-26) Done with job: 546 
+(07:46:35 2024-01-26) Storing results for job 546 in the file random_100_200_0.1_0.1_0.1_ 6_19_FALSE_FALSE_582_582.rds 
+(07:46:40 2024-01-26) Starting job:  547 
+(15:32:22 2024-01-26) Done with job: 182 
+(15:32:22 2024-01-26) Storing results for job 182 in the file scale-free_200_200_0.1_0.2_0.2_31_ 6_FALSE_FALSE_191_191.rds 
+(15:32:30 2024-01-26) Starting job:  183 
+(18:35:30 2024-01-26) Done with job: 364 
+(18:35:30 2024-01-26) Storing results for job 364 in the file random_200_200_0.1_0.2_0.2_32_12_FALSE_FALSE_384_384.rds 
+(18:35:36 2024-01-26) Starting job:  365 
+(19:07:32 2024-01-26) Done with job: 1 
+(19:07:32 2024-01-26) Storing results for job 1 in the file scale-free_200_100_0.1_0.1_0.1_ 3_ 1_FALSE_FALSE_  3_  3.rds 
+(19:07:37 2024-01-26) Starting job:  2 
+(20:34:50 2024-01-26) Done with job: 365 
+(20:34:50 2024-01-26) Storing results for job 365 in the file scale-free_100_100_0.1_0.1_0.1_ 1_13_FALSE_FALSE_385_385.rds 
+(20:34:51 2024-01-26) Starting job:  366 
+(04:33:38 2024-01-27) Done with job: 366 
+(04:33:38 2024-01-27) Storing results for job 366 in the file scale-free_200_100_0.1_0.1_0.1_ 3_13_FALSE_FALSE_387_387.rds 
+(04:33:43 2024-01-27) Starting job:  367 
+(15:48:42 2024-01-28) Start or restart of the simulation at 2024-01-28 15:48:42.125022 
+(15:48:42 2024-01-28) Checked the progress. Currently 47 out of 640 (7.34375%) runs are done 
+(15:48:42 2024-01-28) (15:48:42 2024-01-28) Starting job:  1 
 Starting job:  475 
-Starting job:  26 
-Starting job:  487 
-Starting job:  500 
-Starting job:  526 
-Starting job:  539Starting job:  552  
+(15:48:42 2024-01-28) Starting job:  535 
+(15:48:42 2024-01-28) Starting job:  60 
+(15:48:42 2024-01-28) Starting job:  179 
+(15:48:42 2024-01-28) Starting job:  120 
+(15:48:42 2024-01-28) Starting job:  238 
+(15:48:42 2024-01-28) Starting job:  298 
+(15:48:42 2024-01-28) (15:48:42 2024-01-28) Starting job:  357 
+Starting job:  416 
+(22:38:27 2024-01-28) Done with job: 179 
+(22:38:27 2024-01-28) Storing results for job 179 in the file scale-free_100_200_0.1_0.2_0.2_29_ 6_FALSE_FALSE_189_189.rds 
+(22:38:33 2024-01-28) Starting job:  180 
+(00:58:54 2024-01-29) Done with job: 416 
+(00:58:54 2024-01-29) Storing results for job 416 in the file scale-free_100_100_0.1_0.1_0.1_ 1_15_FALSE_FALSE_449_449.rds 
+(00:58:58 2024-01-29) Starting job:  417 
+(01:07:38 2024-01-29) Done with job: 298 
+(01:07:38 2024-01-29) Storing results for job 298 in the file random_100_100_0.1_0.2_0.2_26_10_FALSE_FALSE_314_314.rds 
+(01:07:45 2024-01-29) Starting job:  299 
+(01:24:54 2024-01-29) Done with job: 120 
+(01:24:54 2024-01-29) Storing results for job 120 in the file random_100_100_0.1_0.1_0.1_ 2_ 5_FALSE_FALSE_130_130.rds 
+(01:25:00 2024-01-29) Starting job:  121 
+(04:38:01 2024-01-29) Done with job: 180 
+(04:38:02 2024-01-29) Storing results for job 180 in the file random_100_200_0.1_0.2_0.2_30_ 6_FALSE_FALSE_190_190.rds 
+(04:38:06 2024-01-29) Starting job:  181 
+(11:50:32 2024-01-29) Start or restart of the simulation at 2024-01-29 11:50:32.3152 
+(11:50:32 2024-01-29) Checked the progress. Currently 52 out of 640 (8.125%) runs are done 
+(11:50:32 2024-01-29) Starting job:  119 
+(11:50:32 2024-01-29) Starting job:  60 
+(11:50:32 2024-01-29) Starting job:  1 
+(11:50:32 2024-01-29) Starting job:  177 
+(11:50:32 2024-01-29) Starting job:  236 
+(11:50:32 2024-01-29) Starting job:  295 
+(11:50:32 2024-01-29) Starting job:  354 
+(11:50:32 2024-01-29) Starting job:  413 
+(11:50:32 2024-01-29) Starting job:  530 
+(11:50:32 2024-01-29) Starting job:  471 
+(22:59:51 2024-01-29) Done with job: 119 
+(22:59:51 2024-01-29) Storing results for job 119 in the file scale-free_100_100_0.1_0.1_0.1_ 1_ 5_FALSE_FALSE_129_129.rds 
+(22:59:57 2024-01-29) Starting job:  120 
+(13:55:38 2024-01-30) Done with job: 1 
+(13:55:38 2024-01-30) Storing results for job 1 in the file random_200_100_0.1_0.1_0.1_ 4_ 1_FALSE_FALSE_  4_  4.rds 
+(13:55:44 2024-01-30) Starting job:  2 
+(14:06:20 2024-01-30) Done with job: 530 
+(14:06:20 2024-01-30) Storing results for job 530 in the file random_200_100_0.1_0.1_0.1_ 4_19_FALSE_FALSE_580_580.rds 
+(14:06:26 2024-01-30) Starting job:  531 
+(15:18:31 2024-01-30) Done with job: 2 
+(15:18:31 2024-01-30) Storing results for job 2 in the file scale-free_100_200_0.1_0.1_0.1_ 5_ 1_FALSE_FALSE_  5_  5.rds 
+(15:18:34 2024-01-30) Starting job:  3 
+(19:42:35 2024-01-30) Done with job: 531 
+(19:42:35 2024-01-30) Storing results for job 531 in the file scale-free_200_200_0.1_0.1_0.1_ 7_19_FALSE_FALSE_583_583.rds 
+(19:42:40 2024-01-30) Starting job:  532 
+(01:40:42 2024-01-31) Done with job: 532 
+(01:40:42 2024-01-31) Storing results for job 532 in the file random_200_200_0.1_0.1_0.1_ 8_19_FALSE_FALSE_584_584.rds 
+(01:40:48 2024-01-31) Starting job:  533 
+(09:11:13 2024-01-31) Start or restart of the simulation at 2024-01-31 09:11:13.846385 
+(09:11:13 2024-01-31) Checked the progress. Currently 58 out of 640 (9.0625%) runs are done 
+(09:11:13 2024-01-31) Starting job:  74 
+(09:11:13 2024-01-31) Starting job:  146 
+(09:11:13 2024-01-31) Starting job:  292 
+(09:11:13 2024-01-31) Starting job:  438 
+(09:11:13 2024-01-31) Starting job:  1 
+(09:11:13 2024-01-31) Starting job:  219 
+(09:11:13 2024-01-31) Starting job:  365 
+(09:11:13 2024-01-31) Starting job:  510 
+(14:37:02 2024-01-31) Done with job: 1 
+(14:37:02 2024-01-31) Storing results for job 1 in the file random_100_200_0.1_0.1_0.1_ 6_ 1_FALSE_FALSE_  6_  6.rds 
+(14:37:05 2024-01-31) Starting job:  2 
+(14:43:29 2024-01-31) Done with job: 219 
+(14:43:29 2024-01-31) Storing results for job 219 in the file random_100_200_0.1_0.2_0.1_14_ 8_FALSE_FALSE_238_238.rds 
+(14:43:33 2024-01-31) Starting job:  220 
+(16:43:12 2024-01-31) Done with job: 510 
+(16:43:12 2024-01-31) Storing results for job 510 in the file random_100_100_0.1_0.1_0.2_18_18_FALSE_FALSE_562_562.rds 
+(16:43:16 2024-01-31) Starting job:  511 
+(04:29:14 2024-02-01) Done with job: 146 
+(04:29:14 2024-02-01) Storing results for job 146 in the file random_200_200_0.1_0.2_0.2_32_ 5_FALSE_FALSE_160_160.rds 
+(04:29:21 2024-02-01) Starting job:  147 
+(07:19:59 2024-02-01) Done with job: 74 
+(07:19:59 2024-02-01) Storing results for job 74 in the file scale-free_200_100_0.1_0.1_0.2_19_ 3_FALSE_FALSE_ 83_ 83.rds 
+(07:20:05 2024-02-01) Starting job:  75 
+(07:20:28 2024-02-01) Done with job: 438 
+(07:20:28 2024-02-01) Storing results for job 438 in the file scale-free_200_100_0.1_0.1_0.1_ 3_16_FALSE_FALSE_483_483.rds 
+(07:20:34 2024-02-01) Starting job:  439 
+(10:10:38 2024-02-01) Start or restart of the simulation at 2024-02-01 10:10:38.458382 
+(10:10:38 2024-02-01) Checked the progress. Currently 64 out of 640 (10%) runs are done 
+(10:10:38 2024-02-01) Starting job:  20 
+(10:10:38 2024-02-01) Starting job:  59 
+(10:10:38 2024-02-01) Starting job:  231(10:10:38 2024-02-01)  
+Starting job:  1 
+(10:10:38 2024-02-01) Starting job:  174 
+(10:10:38 2024-02-01) Starting job:  270 
+(10:10:38 2024-02-01) Starting job:  39 
+(10:10:38 2024-02-01) (10:10:38 2024-02-01) Starting job:  97 
+Starting job:  78 
+(10:10:38 2024-02-01) Starting job:  155 
+(10:10:38 2024-02-01) Starting job:  193 
+(10:10:38 2024-02-01) Starting job:  212 
+(10:10:38 2024-02-01) (10:10:38 2024-02-01) Starting job:  116 
+Starting job:  481 
+(10:10:38 2024-02-01) Starting job:  251 
+(10:10:38 2024-02-01) Starting job:  135 
+(10:10:38 2024-02-01) Starting job:  308 
+(10:10:38 2024-02-01) Starting job:  366 
+(10:10:38 2024-02-01) Starting job:  347 
+(10:10:38 2024-02-01) (10:10:38 2024-02-01) Starting job:  289 Starting job:  539
+ 
+(10:10:38 2024-02-01) Starting job:  327 
+(10:10:38 2024-02-01) Starting job:  423 
+(10:10:38 2024-02-01) Starting job:  443 
+(10:10:38 2024-02-01) Starting job:  519 
+(10:10:38 2024-02-01) Starting job:  500 
+(10:10:38 2024-02-01) Starting job:  558 
+(10:10:38 2024-02-01) (10:10:38 2024-02-01) Starting job:  404(10:10:38 2024-02-01)  Starting job:  385Starting job:  462
+  
 
-Starting job:  103 
-Starting job:  564 
-Starting job:  244 
-Starting job:  577 
-Starting job:  193 
-Starting job:  616 
-Starting job:  590 
-Starting job:  628 
-Starting job:  347 
-Starting job:  513 
-Starting job:  603 
-Parallel cluster stopped successfully. 
-Done with job: 359 
-Storing results for job 359 in the file scale-free_200_200_0.1_0.1_0.1_ 7_12_FALSE_FALSE_359_359.rds 
-Starting job:  360 
-Done with job: 103 
-Storing results for job 103 in the file scale-free_200_200_0.1_0.1_0.1_ 7_ 4_FALSE_FALSE_103_103.rds 
-Starting job:  104 
-Done with job: 295 
-Storing results for job 295 in the file scale-free_200_200_0.1_0.1_0.1_ 7_10_FALSE_FALSE_295_295.rds 
-Starting job:  296 
-Done with job: 104 
-Storing results for job 104 in the file random_200_200_0.1_0.1_0.1_ 8_ 4_FALSE_FALSE_104_104.rds 
-Starting job:  105 
+(19:53:47 2024-02-02) Done with job: 193 
+(19:53:47 2024-02-02) Storing results for job 193 in the file scale-free_200_200_0.1_0.1_0.2_23_ 7_FALSE_FALSE_215_215.rds 
+(19:53:54 2024-02-02) Starting job:  194 
+(20:55:27 2024-02-02) Done with job: 327 
+(20:55:27 2024-02-02) Storing results for job 327 in the file random_200_200_0.1_0.1_0.1_ 8_12_FALSE_FALSE_360_360.rds 
+(20:55:36 2024-02-02) Starting job:  328 
+(21:06:36 2024-02-02) Done with job: 231 
+(21:06:36 2024-02-02) Storing results for job 231 in the file random_200_200_0.1_0.2_0.2_32_ 8_FALSE_FALSE_256_256.rds 
+(21:06:43 2024-02-02) Starting job:  232 
+(22:55:16 2024-02-02) Done with job: 328 
+(22:55:16 2024-02-02) Storing results for job 328 in the file scale-free_100_100_0.1_0.2_0.1_ 9_12_FALSE_FALSE_361_361.rds 
+(22:55:18 2024-02-02) Starting job:  329 
+(23:00:14 2024-02-02) Done with job: 232 
+(23:00:14 2024-02-02) Storing results for job 232 in the file random_100_100_0.1_0.1_0.1_ 2_ 9_FALSE_FALSE_258_258.rds 
+(23:00:16 2024-02-02) Starting job:  233 
+(01:00:06 2024-02-03) Done with job: 329 
+(01:00:06 2024-02-03) Storing results for job 329 in the file random_100_100_0.1_0.2_0.1_10_12_FALSE_FALSE_362_362.rds 
+(01:00:08 2024-02-03) Starting job:  330 
+(08:53:16 2024-02-03) Done with job: 330 
+(08:53:16 2024-02-03) Storing results for job 330 in the file scale-free_200_100_0.1_0.2_0.1_11_12_FALSE_FALSE_363_363.rds 
+(08:53:21 2024-02-03) Starting job:  331 
+(22:14:10 2024-02-03) Start or restart of the simulation at 2024-02-03 22:14:10.052726 
+(22:14:10 2024-02-03) Checked the progress. Currently 71 out of 640 (11.0938%) runs are done 
+(22:14:10 2024-02-03) Starting job:  77 
+(22:14:10 2024-02-03) Starting job:  58 
+(22:14:10 2024-02-03) (22:14:10 2024-02-03) (22:14:10 2024-02-03) (22:14:10 2024-02-03) (22:14:10 2024-02-03) Starting job:  20Starting job:  134Starting job:  39 Starting job:  1Starting job:  115  
+  
+
+
+
+(22:14:10 2024-02-03) Starting job:  96 
+(22:14:10 2024-02-03) Starting job:  153 
+(22:14:10 2024-02-03) Starting job:  304 
+(22:14:10 2024-02-03) Starting job:  191 
+(22:14:10 2024-02-03) (22:14:10 2024-02-03) Starting job:  172 Starting job:  248
+ 
+(22:14:10 2024-02-03) Starting job:  267 
+(22:14:10 2024-02-03) Starting job:  286 
+(22:14:10 2024-02-03) Starting job:  210 
+(22:14:10 2024-02-03) Starting job:  475 
+(22:14:10 2024-02-03) Starting job:  494 
+(22:14:10 2024-02-03) Starting job:  342 
+(22:14:10 2024-02-03) Starting job:  323 
+(22:14:10 2024-02-03) Starting job:  361 
+(22:14:10 2024-02-03) Starting job:  437 
+(22:14:10 2024-02-03) Starting job:  513 
+(22:14:10 2024-02-03) Starting job:  456 
+(22:14:10 2024-02-03) Starting job:  229 
+(22:14:10 2024-02-03) Starting job:  399 
+(22:14:10 2024-02-03) Starting job:  418 
+(22:14:10 2024-02-03) Starting job:  380 
+(22:14:10 2024-02-03) Starting job:  532 
+(22:14:10 2024-02-03) Starting job:  551 
+(14:32:52 2024-02-04) Done with job: 191 
+(14:32:52 2024-02-04) Storing results for job 191 in the file scale-free_100_200_0.1_0.1_0.2_21_ 7_FALSE_FALSE_213_213.rds 
+(14:33:03 2024-02-04) Starting job:  192 
+(07:22:37 2024-02-05) Done with job: 323 
+(07:22:37 2024-02-05) Storing results for job 323 in the file scale-free_200_200_0.1_0.1_0.1_ 7_12_FALSE_FALSE_359_359.rds 
+(07:22:44 2024-02-05) Starting job:  324 
+(07:57:24 2024-02-05) Done with job: 399 
+(07:57:24 2024-02-05) Storing results for job 399 in the file scale-free_200_200_0.1_0.1_0.1_ 7_15_FALSE_FALSE_455_455.rds 
+(07:57:31 2024-02-05) Starting job:  400 
+(08:34:13 2024-02-05) Done with job: 172 
+(08:34:13 2024-02-05) Storing results for job 172 in the file random_200_200_0.1_0.2_0.2_32_ 6_FALSE_FALSE_192_192.rds 
+(08:34:19 2024-02-05) Starting job:  173 
+(15:16:23 2024-02-05) Start or restart of the simulation at 2024-02-05 15:16:23.129345 
+(15:16:23 2024-02-05) Checked the progress. Currently 75 out of 640 (11.7188%) runs are done 
+(15:16:23 2024-02-05) Starting job:  227 
+(15:16:23 2024-02-05) Starting job:  453 
+(15:16:23 2024-02-05) Starting job:  340 
+(15:16:23 2024-02-05) Starting job:  114 
+(15:16:23 2024-02-05) Starting job:  1 
+(18:50:17 2024-02-05) Done with job: 227 
+(18:50:17 2024-02-05) Storing results for job 227 in the file scale-free_100_200_0.1_0.2_0.2_29_ 8_FALSE_FALSE_253_253.rds 
+(18:50:21 2024-02-05) Starting job:  228 
+(19:02:40 2024-02-05) Done with job: 340 
+(19:02:40 2024-02-05) Storing results for job 340 in the file scale-free_100_200_0.1_0.1_0.1_ 5_13_FALSE_FALSE_389_389.rds 
+(19:02:44 2024-02-05) Starting job:  341 
+(22:08:19 2024-02-05) Done with job: 341 
+(22:08:19 2024-02-05) Storing results for job 341 in the file random_100_200_0.1_0.1_0.1_ 6_13_FALSE_FALSE_390_390.rds 
+(22:08:23 2024-02-05) Starting job:  342 
+(05:17:10 2024-02-06) Done with job: 1 
+(05:17:10 2024-02-06) Storing results for job 1 in the file scale-free_200_200_0.1_0.1_0.1_ 7_ 1_FALSE_FALSE_  7_  7.rds 
+(05:17:17 2024-02-06) Starting job:  2 
+(06:17:46 2024-02-06) Done with job: 114 
+(06:17:46 2024-02-06) Storing results for job 114 in the file random_200_200_0.1_0.2_0.2_32_ 4_FALSE_FALSE_128_128.rds 
+(06:17:54 2024-02-06) Starting job:  115 
+(06:28:08 2024-02-06) Done with job: 453 
+(06:28:08 2024-02-06) Storing results for job 453 in the file random_200_200_0.1_0.1_0.1_ 8_17_FALSE_FALSE_520_520.rds 
+(06:28:15 2024-02-06) Starting job:  454 
+(08:43:09 2024-02-06) Done with job: 454 
+(08:43:09 2024-02-06) Storing results for job 454 in the file scale-free_100_100_0.1_0.2_0.1_ 9_17_FALSE_FALSE_521_521.rds 
+(08:43:11 2024-02-06) Starting job:  455 
+(10:35:25 2024-02-06) Done with job: 455 
+(10:35:25 2024-02-06) Storing results for job 455 in the file random_100_100_0.1_0.2_0.1_10_17_FALSE_FALSE_522_522.rds 
+(10:35:27 2024-02-06) Starting job:  456 
+(15:00:55 2024-02-06) Done with job: 115 
+(15:00:55 2024-02-06) Storing results for job 115 in the file scale-free_200_100_0.1_0.1_0.1_ 3_ 5_FALSE_FALSE_131_131.rds 
+(15:01:00 2024-02-06) Starting job:  116 
+(08:38:16 2024-02-07) Start or restart of the simulation at 2024-02-07 08:38:16.625514 
+(08:38:16 2024-02-07) Checked the progress. Currently 84 out of 640 (13.125%) runs are done 
+(08:38:16 2024-02-07) (08:38:16 2024-02-07) (08:38:16 2024-02-07) (08:38:16 2024-02-07) (08:38:16 2024-02-07) Starting job:  223Starting job:  1Starting job:  335Starting job:  446  Starting job:  112  
+
+ 
+
+
+(23:19:30 2024-02-07) Done with job: 112 
+(23:19:30 2024-02-07) Storing results for job 112 in the file scale-free_200_200_0.1_0.2_0.2_31_ 4_FALSE_FALSE_127_127.rds 
+(23:19:37 2024-02-07) Starting job:  113 
+(02:51:33 2024-02-08) Done with job: 446 
+(02:51:33 2024-02-08) Storing results for job 446 in the file scale-free_200_100_0.1_0.1_0.1_ 3_17_FALSE_FALSE_515_515.rds 
+(02:51:39 2024-02-08) Starting job:  447 
+(02:59:39 2024-02-08) Done with job: 335 
+(02:59:39 2024-02-08) Storing results for job 335 in the file random_200_100_0.1_0.1_0.1_ 4_13_FALSE_FALSE_388_388.rds 
+(02:59:45 2024-02-08) Starting job:  336 
+(09:02:40 2024-02-08) Done with job: 336 
+(09:02:40 2024-02-08) Storing results for job 336 in the file scale-free_200_200_0.1_0.1_0.1_ 7_13_FALSE_FALSE_391_391.rds 
+(09:02:45 2024-02-08) Starting job:  337 
+(15:02:59 2024-02-08) Done with job: 337 
+(15:02:59 2024-02-08) Storing results for job 337 in the file random_200_200_0.1_0.1_0.1_ 8_13_FALSE_FALSE_392_392.rds 
+(15:03:04 2024-02-08) Starting job:  338 
+(14:19:08 2024-02-09) Start or restart of the simulation at 2024-02-09 14:19:08.414077 
+(14:19:08 2024-02-09) Checked the progress. Currently 89 out of 640 (13.9062%) runs are done 
+(14:19:08 2024-02-09) Starting job:  1 
+(14:19:08 2024-02-09) Starting job:  111 
+(14:19:08 2024-02-09) Starting job:  332 
+(14:19:08 2024-02-09) Starting job:  221 
+(14:19:08 2024-02-09) Starting job:  442 
+(17:34:58 2024-02-09) Done with job: 111 
+(17:34:58 2024-02-09) Storing results for job 111 in the file random_100_200_0.1_0.2_0.2_30_ 4_FALSE_FALSE_126_126.rds 
+(17:35:01 2024-02-09) Starting job:  112 
+(04:57:21 2024-02-10) Done with job: 1 
+(04:57:21 2024-02-10) Storing results for job 1 in the file random_200_200_0.1_0.1_0.1_ 8_ 1_FALSE_FALSE_  8_  8.rds 
+(04:57:29 2024-02-10) Starting job:  2 
+(07:26:04 2024-02-10) Done with job: 442 
+(07:26:04 2024-02-10) Storing results for job 442 in the file scale-free_200_100_0.1_0.2_0.1_11_17_FALSE_FALSE_523_523.rds 
+(07:26:11 2024-02-10) Starting job:  443 
+(07:28:33 2024-02-10) Done with job: 221 
+(07:28:33 2024-02-10) Storing results for job 221 in the file scale-free_200_100_0.1_0.2_0.2_27_ 8_FALSE_FALSE_251_251.rds 
+(07:28:38 2024-02-10) Starting job:  222 
+(15:56:14 2024-02-10) Done with job: 443 
+(15:56:14 2024-02-10) Storing results for job 443 in the file random_200_100_0.1_0.2_0.1_12_17_FALSE_FALSE_524_524.rds 
+(15:56:19 2024-02-10) Starting job:  444 
+(16:51:10 2024-02-10) Start or restart of the simulation at 2024-02-10 16:51:10.103843 
+(16:51:10 2024-02-10) Checked the progress. Currently 94 out of 640 (14.6875%) runs are done 
+(16:51:10 2024-02-10) Starting job:  1 
+(16:51:10 2024-02-10) Starting job:  329 
+(16:51:10 2024-02-10) Starting job:  110 
+(16:51:10 2024-02-10) Starting job:  219 
+(16:51:10 2024-02-10) Starting job:  438 
+(17:03:24 2024-02-10) Done with job: 444 
+(17:03:24 2024-02-10) Storing results for job 444 in the file scale-free_100_200_0.1_0.2_0.1_13_17_FALSE_FALSE_525_525.rds 
+(17:03:28 2024-02-10) Starting job:  445 
+(21:42:07 2024-02-10) Done with job: 1 
+(21:42:07 2024-02-10) Storing results for job 1 in the file scale-free_100_100_0.1_0.2_0.1_ 9_ 1_FALSE_FALSE_  9_  9.rds 
+(21:42:09 2024-02-10) Starting job:  2 
+(01:49:31 2024-02-11) Done with job: 2 
+(01:49:31 2024-02-11) Storing results for job 2 in the file random_100_100_0.1_0.2_0.1_10_ 1_FALSE_FALSE_ 10_ 10.rds 
+(01:49:35 2024-02-11) Starting job:  3 
+(07:59:17 2024-02-11) Done with job: 438 
+(07:59:17 2024-02-11) Storing results for job 438 in the file random_200_200_0.1_0.2_0.2_32_16_FALSE_FALSE_512_512.rds 
+(07:59:24 2024-02-11) Starting job:  439 
+(10:17:28 2024-02-11) Done with job: 110 
+(10:17:28 2024-02-11) Storing results for job 110 in the file random_200_100_0.1_0.1_0.1_ 4_ 5_FALSE_FALSE_132_132.rds 
+(10:17:34 2024-02-11) Starting job:  111 
+(10:27:51 2024-02-11) Done with job: 219 
+(10:27:51 2024-02-11) Storing results for job 219 in the file random_200_100_0.1_0.2_0.2_28_ 8_FALSE_FALSE_252_252.rds 
+(10:27:57 2024-02-11) Starting job:  220 
+(11:18:45 2024-02-11) Start or restart of the simulation at 2024-02-11 11:18:45.788409 
+(11:18:45 2024-02-11) Checked the progress. Currently 100 out of 640 (15.625%) runs are done 
+(11:18:45 2024-02-11) Starting job:  1 
+(11:18:45 2024-02-11) Starting job:  217 
+(11:18:45 2024-02-11) Starting job:  325 
+(11:18:45 2024-02-11) Starting job:  109 
+(11:18:45 2024-02-11) Starting job:  433 
+(12:52:43 2024-02-11) Done with job: 111 
+(12:52:43 2024-02-11) Storing results for job 111 in the file scale-free_100_200_0.1_0.1_0.1_ 5_ 5_FALSE_FALSE_133_133.rds 
+(12:52:49 2024-02-11) Starting job:  112 
+(15:22:08 2024-02-11) Done with job: 109 
+(15:22:08 2024-02-11) Storing results for job 109 in the file random_100_200_0.1_0.1_0.1_ 6_ 5_FALSE_FALSE_134_134.rds 
+(15:22:12 2024-02-11) Starting job:  110 
+(16:35:20 2024-02-11) Done with job: 112 
+(16:35:20 2024-02-11) Storing results for job 112 in the file random_100_200_0.1_0.1_0.1_ 6_ 5_FALSE_FALSE_134_134.rds 
+(16:35:25 2024-02-11) Starting job:  113 
+(07:19:55 2024-02-12) Done with job: 217 
+(07:19:55 2024-02-12) Storing results for job 217 in the file random_200_100_0.1_0.1_0.1_ 4_ 9_FALSE_FALSE_260_260.rds 
+(07:20:01 2024-02-12) Starting job:  218 
+(07:28:46 2024-02-12) Done with job: 1 
+(07:28:46 2024-02-12) Storing results for job 1 in the file scale-free_200_100_0.1_0.2_0.1_11_ 1_FALSE_FALSE_ 11_ 11.rds 
+(07:28:52 2024-02-12) Starting job:  2 
+(08:47:54 2024-02-12) Done with job: 218 
+(08:47:54 2024-02-12) Storing results for job 218 in the file scale-free_100_200_0.1_0.1_0.1_ 5_ 9_FALSE_FALSE_261_261.rds 
+(08:47:56 2024-02-12) Starting job:  219 
+(10:07:59 2024-02-12) Done with job: 219 
+(10:07:59 2024-02-12) Storing results for job 219 in the file random_100_200_0.1_0.1_0.1_ 6_ 9_FALSE_FALSE_262_262.rds 
+(10:08:01 2024-02-12) Starting job:  220 
+(10:37:49 2024-02-12) Start or restart of the simulation at 2024-02-12 10:37:49.22415 
+(10:37:49 2024-02-12) Checked the progress. Currently 106 out of 640 (16.5625%) runs are done 
+(10:37:49 2024-02-12) Starting job:  1 
+(19:42:24 2024-02-12) Done with job: 1 
+(19:42:24 2024-02-12) Storing results for job 1 in the file random_200_100_0.1_0.2_0.1_12_ 1_FALSE_FALSE_ 12_ 12.rds 
+(19:42:30 2024-02-12) Starting job:  2 
+(20:41:51 2024-02-12) Done with job: 2 
+(20:41:51 2024-02-12) Storing results for job 2 in the file scale-free_100_200_0.1_0.2_0.1_13_ 1_FALSE_FALSE_ 13_ 13.rds 
+(20:41:53 2024-02-12) Starting job:  3 
+(21:42:15 2024-02-12) Done with job: 3 
+(21:42:15 2024-02-12) Storing results for job 3 in the file random_100_200_0.1_0.2_0.1_14_ 1_FALSE_FALSE_ 14_ 14.rds 
+(21:42:17 2024-02-12) Starting job:  4 
+(03:25:48 2024-02-13) Done with job: 4 
+(03:25:48 2024-02-13) Storing results for job 4 in the file scale-free_200_200_0.1_0.2_0.1_15_ 1_FALSE_FALSE_ 15_ 15.rds 
+(03:25:53 2024-02-13) Starting job:  5 
+(10:44:18 2024-02-13) Start or restart of the simulation at 2024-02-13 10:44:18.394192 
+(10:44:18 2024-02-13) Checked the progress. Currently 110 out of 640 (17.1875%) runs are done 
+(10:44:18 2024-02-13) Starting job:  1 
+(00:33:34 2024-02-14) Done with job: 1 
+(00:33:34 2024-02-14) Storing results for job 1 in the file random_200_200_0.1_0.2_0.1_16_ 1_FALSE_FALSE_ 16_ 16.rds 
+(00:33:40 2024-02-14) Starting job:  2 
+(01:55:41 2024-02-14) Done with job: 2 
+(01:55:41 2024-02-14) Storing results for job 2 in the file scale-free_100_100_0.1_0.1_0.2_17_ 1_FALSE_FALSE_ 17_ 17.rds 
+(01:55:43 2024-02-14) Starting job:  3 
+(03:24:06 2024-02-14) Done with job: 3 
+(03:24:06 2024-02-14) Storing results for job 3 in the file random_100_100_0.1_0.1_0.2_18_ 1_FALSE_FALSE_ 18_ 18.rds 
+(03:24:08 2024-02-14) Starting job:  4 
+(11:30:14 2024-02-14) Done with job: 4 
+(11:30:14 2024-02-14) Storing results for job 4 in the file scale-free_200_100_0.1_0.1_0.2_19_ 1_FALSE_FALSE_ 19_ 19.rds 
+(11:30:19 2024-02-14) Starting job:  5 
+(14:16:49 2024-02-15) Start or restart of the simulation at 2024-02-15 14:16:49.068096 
+(14:16:49 2024-02-15) Checked the progress. Currently 114 out of 640 (17.8125%) runs are done 
+(14:16:49 2024-02-15) Starting job:  1 
+(22:22:44 2024-02-15) Done with job: 1 
+(22:22:44 2024-02-15) Storing results for job 1 in the file random_200_100_0.1_0.1_0.2_20_ 1_FALSE_FALSE_ 20_ 20.rds 
+(22:22:49 2024-02-15) Starting job:  2 
+(23:20:44 2024-02-15) Done with job: 2 
+(23:20:44 2024-02-15) Storing results for job 2 in the file scale-free_100_200_0.1_0.1_0.2_21_ 1_FALSE_FALSE_ 21_ 21.rds 
+(23:20:46 2024-02-15) Starting job:  3 
+(04:54:58 2024-02-16) Done with job: 3 
+(04:54:58 2024-02-16) Storing results for job 3 in the file scale-free_200_200_0.1_0.1_0.2_23_ 1_FALSE_FALSE_ 23_ 23.rds 
+(04:55:04 2024-02-16) Starting job:  4 
+(15:01:21 2024-02-21) Start or restart of the simulation at 2024-02-21 15:01:21.971629 
+(15:01:22 2024-02-21) Checked the progress. Currently 117 out of 640 (18.2812%) runs are done 
+(15:01:22 2024-02-21) Starting job:  1 
+(20:59:54 2024-02-21) Done with job: 1 
+(20:59:54 2024-02-21) Storing results for job 1 in the file random_200_200_0.1_0.1_0.2_24_ 1_FALSE_FALSE_ 24_ 24.rds 
+(21:00:00 2024-02-21) Starting job:  2 
+(22:23:44 2024-02-21) Done with job: 2 
+(22:23:44 2024-02-21) Storing results for job 2 in the file scale-free_100_100_0.1_0.2_0.2_25_ 1_FALSE_FALSE_ 25_ 25.rds 
+(22:23:46 2024-02-21) Starting job:  3 
+(23:49:29 2024-02-21) Done with job: 3 
+(23:49:29 2024-02-21) Storing results for job 3 in the file random_100_100_0.1_0.2_0.2_26_ 1_FALSE_FALSE_ 26_ 26.rds 
+(23:49:31 2024-02-21) Starting job:  4 
+(07:52:36 2024-02-22) Done with job: 4 
+(07:52:36 2024-02-22) Storing results for job 4 in the file scale-free_200_100_0.1_0.2_0.2_27_ 1_FALSE_FALSE_ 27_ 27.rds 
+(07:52:41 2024-02-22) Starting job:  5 
+(10:01:02 2024-02-26) Start or restart of the simulation at 2024-02-26 10:01:02.401542 
+(10:01:02 2024-02-26) Checked the progress. Currently 121 out of 640 (18.9062%) runs are done 
+(10:01:02 2024-02-26) Starting job:  1 
+(18:01:26 2024-02-26) Done with job: 1 
+(18:01:26 2024-02-26) Storing results for job 1 in the file random_200_100_0.1_0.2_0.2_28_ 1_FALSE_FALSE_ 28_ 28.rds 
+(18:01:31 2024-02-26) Starting job:  2 
+(19:07:55 2024-02-26) Done with job: 2 
+(19:07:55 2024-02-26) Storing results for job 2 in the file scale-free_100_200_0.1_0.2_0.2_29_ 1_FALSE_FALSE_ 29_ 29.rds 
+(19:07:57 2024-02-26) Starting job:  3 
+(20:11:07 2024-02-26) Done with job: 3 
+(20:11:07 2024-02-26) Storing results for job 3 in the file random_100_200_0.1_0.2_0.2_30_ 1_FALSE_FALSE_ 30_ 30.rds 
+(20:11:09 2024-02-26) Starting job:  4 
+(01:51:34 2024-02-27) Done with job: 4 
+(01:51:34 2024-02-27) Storing results for job 4 in the file scale-free_200_200_0.1_0.2_0.2_31_ 1_FALSE_FALSE_ 31_ 31.rds 
+(01:51:40 2024-02-27) Starting job:  5 
+(08:34:07 2024-02-27) Start or restart of the simulation at 2024-02-27 08:34:07.229737 
+(08:34:07 2024-02-27) Checked the progress. Currently 125 out of 640 (19.5312%) runs are done 
+(08:34:07 2024-02-27) Starting job:  1 
+(14:31:49 2024-02-27) Done with job: 1 
+(14:31:49 2024-02-27) Storing results for job 1 in the file random_200_200_0.1_0.2_0.2_32_ 1_FALSE_FALSE_ 32_ 32.rds 
+(14:31:56 2024-02-27) Starting job:  2 
+(15:58:11 2024-02-27) Done with job: 2 
+(15:58:11 2024-02-27) Storing results for job 2 in the file scale-free_100_100_0.1_0.1_0.1_ 1_ 2_FALSE_FALSE_ 33_ 33.rds 
+(15:58:12 2024-02-27) Starting job:  3 
+(17:24:24 2024-02-27) Done with job: 3 
+(17:24:24 2024-02-27) Storing results for job 3 in the file random_100_100_0.1_0.1_0.1_ 2_ 2_FALSE_FALSE_ 34_ 34.rds 
+(17:24:26 2024-02-27) Starting job:  4 
+(01:21:51 2024-02-28) Done with job: 4 
+(01:21:51 2024-02-28) Storing results for job 4 in the file scale-free_200_100_0.1_0.1_0.1_ 3_ 2_FALSE_FALSE_ 35_ 35.rds 
+(01:21:56 2024-02-28) Starting job:  5 
+(09:04:14 2024-03-04) Start or restart of the simulation at 2024-03-04 09:04:14.743305 
+(09:04:14 2024-03-04) Checked the progress. Currently 129 out of 640 (20.1562%) runs are done 
+(09:04:15 2024-03-04) Starting job:  1 
+(17:11:16 2024-03-04) Done with job: 1 
+(17:11:16 2024-03-04) Storing results for job 1 in the file random_200_100_0.1_0.1_0.1_ 4_ 2_FALSE_FALSE_ 36_ 36.rds 
+(17:11:22 2024-03-04) Starting job:  2 
+(18:12:40 2024-03-04) Done with job: 2 
+(18:12:40 2024-03-04) Storing results for job 2 in the file scale-free_100_200_0.1_0.1_0.1_ 5_ 2_FALSE_FALSE_ 37_ 37.rds 
+(18:12:42 2024-03-04) Starting job:  3 
+(19:19:22 2024-03-04) Done with job: 3 
+(19:19:22 2024-03-04) Storing results for job 3 in the file random_100_200_0.1_0.1_0.1_ 6_ 2_FALSE_FALSE_ 38_ 38.rds 
+(19:19:24 2024-03-04) Starting job:  4 
+(01:21:10 2024-03-05) Done with job: 4 
+(01:21:10 2024-03-05) Storing results for job 4 in the file scale-free_200_200_0.1_0.1_0.1_ 7_ 2_FALSE_FALSE_ 39_ 39.rds 
+(01:21:16 2024-03-05) Starting job:  5 
+(08:53:11 2024-03-05) Start or restart of the simulation at 2024-03-05 08:53:11.107018 
+(08:53:11 2024-03-05) Checked the progress. Currently 133 out of 640 (20.7812%) runs are done 
+(08:53:11 2024-03-05) Starting job:  1 
+(15:03:13 2024-03-05) Done with job: 1 
+(15:03:13 2024-03-05) Storing results for job 1 in the file random_200_200_0.1_0.1_0.1_ 8_ 2_FALSE_FALSE_ 40_ 40.rds 
+(15:03:19 2024-03-05) Starting job:  2 
+(16:29:31 2024-03-05) Done with job: 2 
+(16:29:31 2024-03-05) Storing results for job 2 in the file scale-free_100_100_0.1_0.2_0.1_ 9_ 2_FALSE_FALSE_ 41_ 41.rds 
+(16:29:33 2024-03-05) Starting job:  3 
+(18:02:00 2024-03-05) Done with job: 3 
+(18:02:00 2024-03-05) Storing results for job 3 in the file random_100_100_0.1_0.2_0.1_10_ 2_FALSE_FALSE_ 42_ 42.rds 
+(18:02:01 2024-03-05) Starting job:  4 
+(02:02:35 2024-03-06) Done with job: 4 
+(02:02:35 2024-03-06) Storing results for job 4 in the file scale-free_200_100_0.1_0.2_0.1_11_ 2_FALSE_FALSE_ 43_ 43.rds 
+(02:02:41 2024-03-06) Starting job:  5 
+(07:29:28 2024-03-06) Start or restart of the simulation at 2024-03-06 07:29:28.22809 
+(07:29:28 2024-03-06) Checked the progress. Currently 137 out of 640 (21.4062%) runs are done 
+(07:29:28 2024-03-06) Starting job:  1 
+(15:40:01 2024-03-06) Done with job: 1 
+(15:40:01 2024-03-06) Storing results for job 1 in the file random_200_100_0.1_0.2_0.1_12_ 2_FALSE_FALSE_ 44_ 44.rds 
+(15:40:06 2024-03-06) Starting job:  2 
+(16:39:23 2024-03-06) Done with job: 2 
+(16:39:23 2024-03-06) Storing results for job 2 in the file scale-free_100_200_0.1_0.2_0.1_13_ 2_FALSE_FALSE_ 45_ 45.rds 
+(16:39:25 2024-03-06) Starting job:  3 
+(17:42:43 2024-03-06) Done with job: 3 
+(17:42:43 2024-03-06) Storing results for job 3 in the file random_100_200_0.1_0.2_0.1_14_ 2_FALSE_FALSE_ 46_ 46.rds 
+(17:42:45 2024-03-06) Starting job:  4 
+(23:18:00 2024-03-06) Done with job: 4 
+(23:18:00 2024-03-06) Storing results for job 4 in the file scale-free_200_200_0.1_0.2_0.1_15_ 2_FALSE_FALSE_ 47_ 47.rds 
+(23:18:05 2024-03-06) Starting job:  5 
+(08:54:41 2024-03-07) Start or restart of the simulation at 2024-03-07 08:54:41.866707 
+(08:54:41 2024-03-07) Checked the progress. Currently 141 out of 640 (22.0312%) runs are done 
+(08:54:42 2024-03-07) Starting job:  1 
+(14:51:18 2024-03-07) Done with job: 1 
+(14:51:18 2024-03-07) Storing results for job 1 in the file random_200_200_0.1_0.2_0.1_16_ 2_FALSE_FALSE_ 48_ 48.rds 
+(14:51:23 2024-03-07) Starting job:  2 
+(16:16:54 2024-03-07) Done with job: 2 
+(16:16:54 2024-03-07) Storing results for job 2 in the file scale-free_100_100_0.1_0.1_0.2_17_ 2_FALSE_FALSE_ 49_ 49.rds 
+(16:16:56 2024-03-07) Starting job:  3 
+(17:51:35 2024-03-07) Done with job: 3 
+(17:51:35 2024-03-07) Storing results for job 3 in the file random_100_100_0.1_0.1_0.2_18_ 2_FALSE_FALSE_ 50_ 50.rds 
+(17:51:37 2024-03-07) Starting job:  4 
+(01:53:06 2024-03-08) Done with job: 4 
+(01:53:06 2024-03-08) Storing results for job 4 in the file scale-free_200_100_0.1_0.1_0.2_19_ 2_FALSE_FALSE_ 51_ 51.rds 
+(01:53:11 2024-03-08) Starting job:  5 
+(11:03:00 2024-03-12) Start or restart of the simulation at 2024-03-12 11:03:00.6442 
+(11:03:00 2024-03-12) Checked the progress. Currently 145 out of 640 (22.6562%) runs are done 
+(11:03:00 2024-03-12) Starting job:  1 
+(19:07:16 2024-03-12) Done with job: 1 
+(19:07:16 2024-03-12) Storing results for job 1 in the file random_200_100_0.1_0.1_0.2_20_ 2_FALSE_FALSE_ 52_ 52.rds 
+(19:07:21 2024-03-12) Starting job:  2 
+(20:05:32 2024-03-12) Done with job: 2 
+(20:05:32 2024-03-12) Storing results for job 2 in the file scale-free_100_200_0.1_0.1_0.2_21_ 2_FALSE_FALSE_ 53_ 53.rds 
+(20:05:34 2024-03-12) Starting job:  3 
+(21:14:12 2024-03-12) Done with job: 3 
+(21:14:12 2024-03-12) Storing results for job 3 in the file random_100_200_0.1_0.1_0.2_22_ 2_FALSE_FALSE_ 54_ 54.rds 
+(21:14:14 2024-03-12) Starting job:  4 
+(02:45:13 2024-03-13) Done with job: 4 
+(02:45:13 2024-03-13) Storing results for job 4 in the file scale-free_200_200_0.1_0.1_0.2_23_ 2_FALSE_FALSE_ 55_ 55.rds 
+(02:45:19 2024-03-13) Starting job:  5 
+(10:34:31 2024-03-13) Start or restart of the simulation at 2024-03-13 10:34:31.294806 
+(10:34:31 2024-03-13) Checked the progress. Currently 149 out of 640 (23.2812%) runs are done 
+(10:34:31 2024-03-13) Starting job:  1 
+(16:24:43 2024-03-13) Done with job: 1 
+(16:24:43 2024-03-13) Storing results for job 1 in the file random_200_200_0.1_0.1_0.2_24_ 2_FALSE_FALSE_ 56_ 56.rds 
+(16:24:49 2024-03-13) Starting job:  2 
+(17:49:46 2024-03-13) Done with job: 2 
+(17:49:46 2024-03-13) Storing results for job 2 in the file scale-free_100_100_0.1_0.2_0.2_25_ 2_FALSE_FALSE_ 57_ 57.rds 
+(17:49:48 2024-03-13) Starting job:  3 
+(19:15:41 2024-03-13) Done with job: 3 
+(19:15:41 2024-03-13) Storing results for job 3 in the file random_100_100_0.1_0.2_0.2_26_ 2_FALSE_FALSE_ 58_ 58.rds 
+(19:15:43 2024-03-13) Starting job:  4 
+(03:32:34 2024-03-14) Done with job: 4 
+(03:32:34 2024-03-14) Storing results for job 4 in the file scale-free_200_100_0.1_0.2_0.2_27_ 2_FALSE_FALSE_ 59_ 59.rds 
+(03:32:39 2024-03-14) Starting job:  5 
+(08:01:06 2024-03-14) Start or restart of the simulation at 2024-03-14 08:01:06.883667 
+(08:01:06 2024-03-14) Checked the progress. Currently 153 out of 640 (23.9062%) runs are done 
+(08:01:07 2024-03-14) Starting job:  1 
