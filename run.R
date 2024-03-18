@@ -22,7 +22,7 @@ sim_param <- generate_sim_param(test_run = FALSE)
 n_repetitions <- 20
 
 # Number of parallel workers to use (max. is 50)
-n_workers <- 1
+n_workers <- 6
 
 # Initialize simulation settings based on the provided parameter settings and repetitions
 simulation_settings <- simtracker::initialize_simulation_settings(sim_param, n_repetitions)
