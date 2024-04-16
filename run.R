@@ -76,7 +76,7 @@ algo_design <- list(
 addExperiments(prob_design, algo_design, repls = repls)
 
 ### submit
-ids <- findNotStarted()
+
 #submitJobs(ids = 1:4)
 if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
   ids <- findNotStarted()
@@ -86,7 +86,8 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
                               memory = 80000, walltime = 10*24*3600,
                               max.concurrent.jobs = max.concurrent.jobs))
 } else {
-  submitJobs(ids = ids)
+  # This will run otherwise. By default all jobs will be submitted, use with care.
+  submitJobs(resources = list(measure.memory = TRUE))
 }
 
 waitForJobs()
