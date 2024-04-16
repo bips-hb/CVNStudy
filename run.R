@@ -1,5 +1,5 @@
 library(batchtools)
-library(CVN) 
+library(CVN)
 library(CVNSim)
 library(dplyr)
 library(hmeasure)
@@ -13,34 +13,33 @@ set.seed(1)
 
 # Debugging --------------------------
 
-#' For debugging. Only a limited number of parameter settings is used, see 
-#' parameter-settings.R. Only 
+#' For debugging. Only a limited number of parameter settings is used, see
+#' parameter-settings.R.
 test_run <- FALSE
-#' !!! Set this parameter in 'parameter-settings.R' as well
 
 # Total number of replications for each parameter setting
-if (test_run) { 
+if (test_run) {
   repls <- 1
-} else { 
+} else {
   repls <- 20
 }
 
 # Setting up the repository ---------
 
-#' WARNING: If TRUE, removes the current repository and creates a new one. Used 
-#' for debugging as well 
-start_from_scratch <- TRUE 
+#' WARNING: If TRUE, removes the current repository and creates a new one. Used
+#' for debugging as well
+start_from_scratch <- TRUE
 
 #' Name of the repository
 reg_name <- "cvnstudy"
 
 #' Packages and files to load
 packages = c("CVN", "CVNSim", "dplyr", "hmeasure", "batchtools")
-source = c("problems.R", "algorithms.R", "parameter-settings.R", 
+source = c("problems.R", "algorithms.R", "parameter-settings.R",
            "create-weight-matrices.R")
 
 #' Number of concurrent jobs that run on the cluster (if the cluster is used)
-max.concurrent.jobs <- 200
+max.concurrent.jobs <- 25
 
 
 #' THE EXPERIMENT ITSELF -------------------------------------------------------
@@ -50,18 +49,21 @@ reg_dir <- sprintf("%s/registries/%s", getwd(), reg_name)
 if (start_from_scratch) { # remove any previously existing registry and start a new one
   dir.create("registries", showWarnings = FALSE)
   unlink(reg_dir, recursive = TRUE)
-  reg <- makeExperimentRegistry(file.dir = reg_dir, packages = packages, source = source)      
-} else { 
+  reg <- makeExperimentRegistry(file.dir = reg_dir, packages = packages, source = source)
+} else {
   reg <- loadRegistry(file.dir = reg_dir, writeable = TRUE)
 }
 
 ### add problems
-addProblem(name = "sim_data", fun = simulator_wrapper, seed = 1) 
+addProblem(name = "sim_data", fun = simulator_wrapper, seed = 1)
 
-### add algorithms 
-addAlgorithm(name = "cvn", fun = cvn_wrapper) 
+### add algorithms
+addAlgorithm(name = "cvn", fun = cvn_wrapper)
 
 ### add the experiments
+
+source("parameter-settings.R")
+sim_param <- generate_sim_param(test_run)
 
 # parameters for the simulation
 prob_design <- list(sim_data = sim_param)
@@ -73,7 +75,7 @@ algo_design <- list(
 
 addExperiments(prob_design, algo_design, repls = repls)
 
-### submit 
+### submit
 ids <- findNotStarted()
 #submitJobs(ids = 1:4)
 if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
@@ -90,8 +92,8 @@ if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
 waitForJobs()
 
 
-#' COLLECT THE RESULTS --------------------------------------------------------- 
-res <- reduceResultsList() 
+#' COLLECT THE RESULTS ---------------------------------------------------------
+res <- reduceResultsList()
 
 # combine into one big data frame
 res <- do.call(rbind.data.frame, res)
@@ -108,4 +110,4 @@ readr::write_rds(tab, "results/raw-results.rds", compress = "gz")
 source("process-results.R")
 
 # create the plots
-source("plot.R") 
+source("plot.R")
