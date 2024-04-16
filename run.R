@@ -11,11 +11,13 @@ options(stringsAsFactors = FALSE)
 
 set.seed(1)
 
+# You can set the number of workers in the file batchtools.conf.R
+
 # Debugging --------------------------
 
 #' For debugging. Only a limited number of parameter settings is used, see
 #' parameter-settings.R.
-test_run <- FALSE
+test_run <- TRUE
 
 # Total number of replications for each parameter setting
 if (test_run) {
@@ -37,9 +39,6 @@ reg_name <- "cvnstudy"
 packages = c("CVN", "CVNSim", "dplyr", "hmeasure", "batchtools")
 source = c("problems.R", "algorithms.R", "parameter-settings.R",
            "create-weight-matrices.R")
-
-#' Number of concurrent jobs that run on the cluster (if the cluster is used)
-max.concurrent.jobs <- 25
 
 
 #' THE EXPERIMENT ITSELF -------------------------------------------------------
@@ -76,19 +75,7 @@ algo_design <- list(
 addExperiments(prob_design, algo_design, repls = repls)
 
 ### submit
-
-#submitJobs(ids = 1:4)
-if (grepl("node\\d{2}|bipscluster", system("hostname", intern = TRUE))) {
-  ids <- findNotStarted()
-  ids[, chunk := chunk(job.id, chunk.size = 50)]
-  submitJobs(ids = ids, # walltime in seconds, 10 days max, memory in MB
-             resources = list(name = reg_name, chunks.as.arrayjobs = TRUE,
-                              memory = 80000, walltime = 10*24*3600,
-                              max.concurrent.jobs = max.concurrent.jobs))
-} else {
-  # This will run otherwise. By default all jobs will be submitted, use with care.
-  submitJobs(resources = list(measure.memory = TRUE))
-}
+submitJobs(resources = list(measure.memory = TRUE))
 
 waitForJobs()
 
