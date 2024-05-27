@@ -5,4 +5,4 @@
 #
 # If your system has 10 CPUs, keep some room for the OS and stuff by setting ncpus = 8 and max.load = 8 (default is max.load = ncpus)
 
-cluster.functions <- makeClusterFunctionsSSH(list(Worker$new("localhost", ncpus = 25, max.load = 100)))
+cluster.functions <- makeClusterFunctionsSSH(list(Worker$new("localhost", ncpus = 50, max.load = 100)))
